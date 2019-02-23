@@ -104,8 +104,12 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    position: relative;
-    top: -25px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+
     li {
         margin: 0;
         padding: 0;
@@ -121,14 +125,21 @@
             border: 0;
             text-indent: -9999px;
             cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    opacity: 0.6;
+            transition: all 0.3s;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            opacity: 0.5;
             &:hover {
                 opacity: 1;
                 transform: scale(1.1);
             }
 
+        }
+
+        &.slick-active {
+            button {
+                opacity: 1;
+                transform: scale(1.1);
+            }
         }
     }
 }

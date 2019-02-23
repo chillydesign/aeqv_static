@@ -23,13 +23,39 @@ body {
 }
 
 
-
+section#home_page_slider {}
 #student_slider {
     .slide {
-        height: 400px;
+        height: 500px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
 
 } // END #student_slider
+
+
+
+section#home_page_search {
+    background: $green;
+    padding: 30px 30px 10px;
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        input, select {
+            flex: 1 auto;
+            width: 48%;
+            max-width: 48%;
+            display: inline-block;
+            margin: 0 0 20px;
+
+            @media (min-width: $mobile_width) {
+                width: 23%;
+                max-width: 23%;
+            }
+        }
+
+    }
+} // #home_page_search

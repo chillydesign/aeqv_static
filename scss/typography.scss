@@ -36,3 +36,23 @@ a {
 
 
 }
+
+
+
+form {
+
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    border: 0;
+    font-family: $font_stack;
+    font-size: $font_size;
+    margin: 0 0 10px;
+    width: 100%;
+    box-shadow:  0 3px 0 0 transparent inset;
+    transition:  all 0.3s;
+    &:focus {
+        
+    }
+}
