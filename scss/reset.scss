@@ -39,7 +39,13 @@ table {	border-collapse: collapse;	border-spacing: 0}
     margin-left: auto;
 }
 
+@media (min-width: $mobile_width) {
 
+ .col-sm-right {
+     text-align: right;
+ }
+
+}
 
 @media (min-width: $mobile_width) {
     .container {

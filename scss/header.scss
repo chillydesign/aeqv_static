@@ -6,25 +6,7 @@ $nav_width: 300px;
 @media (min-width: $mobile_width) {
 }
 
-#menu_button {
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    z-index: 1000;
-    top: 20px;
-    right: 20px;
-    background: url('../images/menu.svg') no-repeat center;
-    background-size: 30px;
-    text-indent: -9999px;
-    cursor: pointer;
 
-
-    @media (min-width: 768px) {
-        display: none;
-    }
-
-}
 
 header {
     background: white;
@@ -119,6 +101,7 @@ header {
                     padding:  15px;
                     margin:  0 0;
                     position: relative;
+                    font-weight: bold;
                     &:link, &:visited, &:active {
                         color: $pink;
                     }
@@ -158,84 +141,22 @@ header {
 
 }
 
+#menu_button {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    background: url('../images/menu.svg') no-repeat center;
+    background-size: 30px;
+    text-indent: -9999px;
+    cursor: pointer;
 
 
-//
-// $nav_width: 300px;
-// $logo_height: 40px;
-//
-// header {
-//     background: white;
-//     padding: 20px 0;
-//     border-bottom: 4px solid $yellow;
-//
-//
-//     .header_inner {
-//         display: flex;
-//         flex-wrap: wrap;
-//     }
-//
-//     nav, #branding {
-//         flex: 1 auto;
-//
-//     }
-//
-//
-//
-//     #branding {
-//         text-indent: -9999px;
-//         background: url('../images/logo.svg') no-repeat center left;
-//         background-size: contain;
-//         height: $logo_height;
-//         width: #{($logo_height * 2.821348223 )}; // logo ratio w/h = 2.821348223
-//         display: inline-block;
-//         &:hover {
-//             transform: scale(1.1);
-//         }
-//     }
-//
-//
-//
-//     nav  {
-//         text-align: right;
-//         ul {
-//             margin: 0;
-//             padding: 0;
-//             li {
-//                 display: inline-block;
-//                 margin: 0;
-//                 padding: 0;
-//             }
-//         }
-//     } // end of nav
-//
-//     a {
-//         display: inline-block;
-//         color: $pink;
-//         padding: 10px;
-//         &:link,&:active,&:visited,&:hover {
-//             color: $pink;
-//         }
-//     } // end of a
-//
-// } // end of header
-//
-//
-// #menu_button {
-//     display: inline-block;
-//     height: 30px;
-//     width: 30px;
-//     position: absolute;
-//     top: 60px;
-//     right: 10px;
-//     background: url('../images/menu.svg') no-repeat center;
-//     background-size: cover;
-//     text-indent: -9999px;
-//     cursor: pointer;
-//
-//
-//     @media (min-width: 768px) {
-//         display: none;
-//     }
-//
-// }
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+}
