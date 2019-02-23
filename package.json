@@ -1,0 +1,33 @@
+{
+    "name": "aeqv static 2019",
+    "version": "0.0.1",
+    "description": "aeqv static 2019",
+    "main": "index.html",
+    "scripts": {
+        "test": "say hello"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chillydesign/aeqv_static.git"
+    },
+    "author": "Charles Harvey",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/chillydesign/aeqv_static/issues"
+    },
+    "homepage": "https://github.com/chillydesign/aeqv_static#readme",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-image-resize": "^0.13.0",
+        "gulp-minify": "^3.0.15",
+        "gulp-sass": "^4.0.1",
+        "lodash": "^4.17.11",
+        "webpack": "^4.20.0"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 10 versions"
+    ],
+    "dependencies": {}
+}
