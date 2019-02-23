@@ -1,0 +1,38 @@
+
+p {
+    padding: 0 0 30px;
+    font-size: $font_size;
+    line-height: 150%;
+}
+
+li {
+    font-size: $font_size;
+    padding: 0 0 5px;
+}
+
+
+strong, b {
+    font-weight: bold;
+}
+em, i {
+    font-size: italic;
+}
+
+a {
+
+    transition: all 0.3s;
+
+    &:link, &:visited, &:active, &:hover {
+    color: $brand_color;
+    text-decoration: none;
+    }
+    &:hover {
+
+    }
+
+    &:focus {
+        box-shadow: 0 0 5px $brand_color;
+    }
+
+
+}

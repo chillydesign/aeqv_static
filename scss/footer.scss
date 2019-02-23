@@ -1,0 +1,21 @@
+footer {
+    background: $green;
+    border-top: 4px solid $yellow;
+    color: white;
+    padding: 20px 0 0;
+
+
+    a {
+        color: white;
+        &:link,&:active,&:visited,&:hover {
+            color: white;
+        }
+    }
+
+}
+
+#copyright_notice {
+    text-align: center;
+    border-top: 4px solid $yellow;
+    padding: 10px 0;
+}
