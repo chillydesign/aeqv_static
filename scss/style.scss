@@ -23,16 +23,43 @@ body {
 }
 
 
-section#home_page_slider {}
-#student_slider {
-    .slide {
-        height: 500px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+section#student_slider_section {
+    position: relative;
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    .welcome_text {
+        flex: 1 auto;
+        align-self: center;
+        z-index: 20;
+        background: transparentize($font_color, 0.45);
+        color: white;
+        padding: 40px;
+        max-width: 600px;
+        text-align: center;
 
-} // END #student_slider
+        p {
+            font-size: 2em;
+        }
+
+    }
+    #student_slider {
+        position: absolute;
+        height: 100%;
+        top:0;
+        left: 0;
+        width: 100%;
+        .slide {
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    } // END #student_slider
+} // student_slider_section
+
 
 
 

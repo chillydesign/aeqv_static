@@ -1,4 +1,33 @@
 
+
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 110%;
+}
+
+h1 {
+    font-size: #{$font_size * 1.9};
+    padding: 0 0 30px;
+
+
+}
+h2 {
+    font-size: #{$font_size * 1.6};
+    padding: 0 0 20px;
+
+
+}
+
+h3 {
+    font-size: #{$font_size * 1.3};
+    padding: 0 0 10px;
+
+
+}
+
+
+
+
 p {
     padding: 0 0 30px;
     font-size: $font_size;
@@ -23,8 +52,8 @@ a {
     transition: all 0.3s;
 
     &:link, &:visited, &:active, &:hover {
-    color: $brand_color;
-    text-decoration: none;
+        color: $brand_color;
+        text-decoration: none;
     }
     &:hover {
 
@@ -32,6 +61,18 @@ a {
 
     &:focus {
         box-shadow: 0 0 5px $brand_color;
+    }
+
+    &.button {
+        display: inline-block;
+        padding: 10px 30px;
+        background: $yellow;
+        color: $font_color;
+        font-size: $font_size;
+        &:hover {
+            transform: scale(1.1);
+
+        }
     }
 
 
@@ -53,6 +94,6 @@ input, textarea, select, button {
     box-shadow:  0 3px 0 0 transparent inset;
     transition:  all 0.3s;
     &:focus {
-        
+
     }
 }

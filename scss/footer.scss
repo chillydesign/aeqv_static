@@ -12,10 +12,48 @@ footer {
         }
     }
 
+    h3 {
+        position: relative;
+        padding: 0;
+        margin: 0 0 15px;
+        &:after {
+            content: '';
+            width: 200px;
+            border-bottom: 3px solid $yellow;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+    }
+
 }
 
 #copyright_notice {
     text-align: center;
     border-top: 4px solid $yellow;
     padding: 10px 0;
+}
+
+
+$social_icon_size: 40px;
+.social_icon {
+    background: no-repeat center center;
+    display: inline-block;
+    width: $social_icon_size;
+    background-size: cover;
+    text-indent: -9999px;
+    transition: all 0.3s;
+    opacity: 0.8;
+    margin: 10px 0 0;
+    &:hover {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+.facebook_icon {
+    background-image: url('../images/social/facebook.svg');
+}
+.twitter_icon {
+        background-image: url('../images/social/twitter.svg');
 }
