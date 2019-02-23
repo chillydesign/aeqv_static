@@ -2,7 +2,10 @@
 
 @import 'variables';
 @import 'reset';
-
+@import 'typography';
+@import 'header';
+@import 'footer';
+@import 'slick';
 
 @media (min-width: $mobile_width) { }
 @media (min-width: $tablet_width) { }
@@ -20,6 +23,13 @@ body {
 }
 
 
-@import 'typography';
-@import 'header';
-@import 'footer';
+
+#student_slider {
+    .slide {
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+} // END #student_slider

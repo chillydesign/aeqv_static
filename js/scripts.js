@@ -32,6 +32,18 @@
 
 
 
+        // SLIDER
+        // SLIDER
+
+        $('.slick_slider').slick({
+            dots: true,
+            arrows: false
+        });
+        // SLIDER
+        // SLIDER
+
+
+
 
 
         // MAP
