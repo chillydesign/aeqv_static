@@ -32,9 +32,22 @@ section {
     padding: 20px;
     margin: 0 0 20px;
 
+    h3 {
+        a {
+            color: inherit;
+        }
+    }
+
+    a.button  {
+        margin-top: 10px;
+    }
+
+
     &.green_box {
         background-color: $green;
         color: white;
+
+
     }
     &.yellow_box {
         background-color: $yellow;
@@ -42,6 +55,7 @@ section {
 
         a.button {
             background-color: $green;
+    color: white;
         }
 
     }
@@ -172,9 +186,6 @@ section#home_page_search {
 
         }
         input[type="submit"], button {
-            background: $blue ;
-
-            color: white;
             text-indent: -10px;
             &:after {
                 content:'';
@@ -230,4 +241,19 @@ section#become_member { } // #become_member
         }
     }
 
+}
+
+
+
+
+#search_results {
+    aside {
+        background: $light_grey;
+        padding: 20px 20px 10px;
+    }
+    form {
+        input, select, button {
+            margin-bottom: 20px;
+        }
+    }
 }

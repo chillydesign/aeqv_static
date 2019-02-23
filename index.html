@@ -13,15 +13,15 @@
     <header>
         <div class="container">
             <div class="header_inner">
-                <a href="#" id="branding">AEQV</a>
+                <a href="index.html" id="branding">AEQV</a>
                 <nav>
                     <ul>
-                        <li><a href="">Actualités</a></li>
-                        <li><a href="">Cours</a></li>
-                        <li><a href="">Galerie</a></li>
-                        <li><a href="">Pratique</a></li>
-                        <li><a href="">Apropos</a></li>
-                        <li><a href="">Offres d’emploi</a></li>
+                        <li><a href="index.html">Actualités</a></li>
+                        <li><a href="search.html">Cours</a></li>
+                        <li><a href="index.html">Galerie</a></li>
+                        <li><a href="search.html">Pratique</a></li>
+                        <li><a href="index.html">Apropos</a></li>
+                        <li><a href="search.html">Offres d’emploi</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,174 +33,172 @@
     <section id="student_slider_section">
 
         <div class="welcome_text">
-            <p>Nam ne aute noster amet, eu aut imitarentur do admodum multos ita consequat
-                philosophari, ea iudicem firmissimum, velit an pariatur an dolore eu qui
-                deserunt relinqueret, esse expetendis de praetermissum, id singulis
-                familiaritatem.</p>
-                <a href="#" class="button">Some action</a>
+            <p>Nam ne aute noster amet, eu aut imitarentur do admodum multos ita consequat philosophari, ea iudicem firmissimum, velit an pariatur an dolore eu qui deserunt relinqueret, esse expetendis de praetermissum, id singulis familiaritatem.</p>
+            <a href="#" class="button">Some action</a>
 
+        </div>
+
+
+        <div class="slick_slider" id="student_slider" >
+            <div class="slide" style="background-image:url(images/students1.jpg)"></div>
+            <div class="slide" style="background-image:url(images/students2.jpg)"></div>
+            <div class="slide" style="background-image:url(images/students3.jpg)"></div>
+        </div>
+    </section>
+
+
+    <section id="home_page_search">
+        <div class="container">
+            <form action="search.html">
+
+                <input type="text" name="keyword" id="keyword" placeholder="trouver un cours" />
+                <select name="category" id="category">
+                    <option value="">catégorie</option>
+                    <option value="First">First</option>
+                    <option value="Second">Second</option>
+                    <option value="Third">Third</option>
+                </select>
+                <select name="age" id="age">
+                    <option value="">âge</option>
+                    <option value="First">First</option>
+                    <option value="Second">Second</option>
+                    <option value="Third">Third</option>
+                </select>
+                <button type="submit" name="search_course">Search</button>
+
+            </form>
+        </div>
+    </section>
+
+
+    <section id="latest_workshop">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-right">
+                    <h2 class="big_title">Workshop <br>of the month</h2>
+                    <h3>Workshop title here</h3>
+                    <a href="#" class="button">Find out more</a>
+                </div><!-- END OF COL -->
+                <div class="col-sm-6">
+                    <div class="box green_box">
+                        <img src="images/students1.jpg" alt="" />
+                    </div>
+                </div><!-- END OF COL -->
             </div>
+        </div><!-- end of container -->
+    </section>
 
 
-            <div class="slick_slider" id="student_slider" >
-                <div class="slide" style="background-image:url(images/students1.jpg)">
-                </div>
-                <div class="slide" style="background-image:url(images/students2.jpg)">
-                </div>
-                <div class="slide" style="background-image:url(images/students3.jpg)">
-                </div>
+    <section id="latest_course">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-6">
+                    <div class="box brown_box">
+                        <img src="images/students2.jpg" alt="" />
+                    </div>
+                </div><!-- END OF COL -->
+                <div class="col-sm-6">
+                    <h2 class="big_title ">Course <br>of the month</h2>
+                    <h3>Course Title here</h3>
+                    <a href="#" class="button">Find out more</a>
+                </div><!-- END OF COL -->
             </div>
-        </section>
+        </div><!-- end of container -->
+    </section>
 
 
-        <section id="home_page_search">
-            <div class="container">
-                <form action="">
 
-                    <input type="text" name="keyword" id="keyword" placeholder="trouver un cours" />
-                    <select name="category" id="category">
-                        <option value="">catégorie</option>
-                        <option value="First">First</option>
-                        <option value="Second">Second</option>
-                        <option value="Third">Third</option>
-                    </select>
-                    <select name="age" id="age">
-                        <option value="">âge</option>
-                        <option value="First">First</option>
-                        <option value="Second">Second</option>
-                        <option value="Third">Third</option>
-                    </select>
-                    <button type="submit" name="search_course">Search</button>
-
-                </form>
+    <section id="become_member">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-right">
+                    <h2 class="big_title">Become <br>a member</h2>
+                    <p>Do excepteur cohaerescant, voluptate te legam de vidisse amet tempor non malis malnibus.</p>
+                    <a href="#" class="button">Find out more</a>
+                </div><!-- END OF COL -->
+                <div class="col-sm-6">
+                    <div class="box blue_box">
+                        <img src="images/students3.jpg" alt="" />
+                    </div>
+                </div><!-- END OF COL -->
             </div>
-        </section>
+        </div><!-- end of container -->
+    </section>
 
 
-        <section id="latest_workshop">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-right">
-                        <h2 class="big_title">Workshop <br>of the month</h2>
-                        <h3>Workshop title here</h3>
-                        <a href="#" class="button">Find out more</a>
+    <section id="become_teacher">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-6">
+                    <div class="box pink_box">
+                        <img src="images/students2.jpg" alt="" />
                     </div>
-                    <div class="col-sm-6">
-                        <div class="box green_box">
-                            <img src="images/students1.jpg" alt="" />
-                        </div>
-                    </div>
+                </div><!-- END OF COL -->
+                <div class="col-sm-6">
+                    <h2 class="big_title ">Become <br>a teacher</h2>
+                    <p>In minim duis aut pariatur, magna id an magna excepteur te ad aliqua fugiat fugiat proident, voluptate an excepteur, qui magna ingeniis se se nosm.</p>
+                    <a href="#" class="button">Find out more</a>
+                </div><!-- END OF COL -->
+            </div>
+        </div><!-- end of container -->
+    </section>
+
+
+
+
+    <footer>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <h3>Contact</h3>
+                    <p>Association Ecole & Quartier Versoix <br>
+                        Collège des Colombières <br>
+                        1290 Versoix - CH <br>
+                        tél. 022 388 24 44 <br>
+                        <a href="mailto:info@aeqv.ch">info@aeqv.ch</a>
+                    </p>
+
+                    <p>Secrétariat : <br>
+                        salle 332, 3e étage<br>
+                        CCP 12-8388-3<br>
+                    </p>
+
+                </div><!-- END OF COL -->
+                <div class="col-sm-4">
+                    <h3>Opening Hours</h3>
+                    <p>du lundi au vendredi de 8h15 à 12h </p>
+
+
+                    <h3>Social</h3>
+                    <p>
+                        <a class="social_icon facebook_icon" href="facebook">Facebook</a>
+                        <a class="social_icon twitter_icon" href="twitter">twitter</a>
+                    </p>
                 </div>
-            </div><!-- end of container -->
-        </section>
+                <div class="col-sm-4">
 
 
-        <section id="latest_course">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-sm-6">
-                        <div class="box brown_box">
-                            <img src="images/students2.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h2 class="big_title ">Course <br>of the month</h2>
-                        <h3>Course Title here</h3>
-                        <a href="#" class="button">Find out more</a>
-                    </div>
-                </div>
-            </div><!-- end of container -->
-        </section>
-
-
-
-        <section id="become_member">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-right">
-                        <h2 class="big_title">Become <br>a member</h2>
-                        <p>Do excepteur cohaerescant, voluptate te legam de vidisse amet tempor non malis malnibus.</p>
-                        <a href="#" class="button">Find out more</a>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="box blue_box">
-                            <img src="images/students3.jpg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of container -->
-        </section>
-
-
-        <section id="become_teacher">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-sm-6">
-                        <div class="box pink_box">
-                            <img src="images/students2.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h2 class="big_title ">Become <br>a teacher</h2>
-                        <p>In minim duis aut pariatur, magna id an magna excepteur te ad aliqua fugiat fugiat proident, voluptate an excepteur, qui magna ingeniis se se nosm.</p>
-                        <a href="#" class="button">Find out more</a>
-                    </div>
-                </div>
-            </div><!-- end of container -->
-        </section>
+                </div><!-- END OF COL -->
+            </div>
+        </div>
 
 
 
 
-        <footer>
+        <p id="copyright_notice">
+            &copy; 2019 AEQV |
+            <a href="https://webfactor.ch" target="_blank">Website by Webfactor</a>
+        </p>
 
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-
-                        <h3>Contact</h3>
-                        <p>Association Ecole & Quartier Versoix <br>
-                            Collège des Colombières <br>
-                            1290 Versoix - CH <br>
-                            tél. 022 388 24 44 <br>
-                            <a href="mailto:info@aeqv.ch">info@aeqv.ch</a></p>
-
-                            <p>Secrétariat : <br>
-                                salle 332, 3e étage<br>
-                                CCP 12-8388-3<br>
-                            </p>
-
-                        </div>
-                        <div class="col-sm-4">
-                            <h3>Opening Hours</h3>
-                            <p>du lundi au vendredi de 8h15 à 12h </p>
+    </footer>
 
 
-                            <h3>Social</h3>
-                            <p>
-                                <a class="social_icon facebook_icon" href="facebook">Facebook</a>
-                                <a class="social_icon twitter_icon" href="twitter">twitter</a>
-                            </p>
-                        </div>
-                        <div class="col-sm-4">
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <p  id="copyright_notice">&copy; 2019 AEQV | <a href="https://webfactor.ch" target="_blank">Website by Webfactor</a></p>
-
-
-            </footer>
-
-
-            <script type="text/javascript" src="js/jquery.min.js"></script>
-            <script type="text/javascript" src="js/slick.min.js"></script>
-            <script type="text/javascript" src="js/scripts.js"></script>
-        </body>
-        </html>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
