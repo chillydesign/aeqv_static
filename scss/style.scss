@@ -31,11 +31,18 @@ section {
 .box {
     padding: 20px;
     margin: 0 0 20px;
+    background: $light_grey;
 
     h3 {
         a {
             color: inherit;
         }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 ;
     }
 
     a.button  {
@@ -55,7 +62,7 @@ section {
 
         a.button {
             background-color: $green;
-    color: white;
+            color: white;
         }
 
     }
@@ -77,12 +84,41 @@ section {
         color: white;
     }
 
-
-    img {
-        width: 100%;
-        height: auto;
-        margin: 0 ;
+    &.box_cat_1 {
+        border-top: 5px solid $blue;
+        a.button {
+            background: $blue;
+            color: white;
+        }
     }
+    &.box_cat_2 {
+        border-top: 5px solid $green;
+        a.button {
+            background: $green;
+            color: white
+        }
+    }
+    &.box_cat_3 {
+        border-top: 5px solid $yellow;
+        a.button {
+            background: $yellow;
+        }
+    }
+    &.box_cat_4 {
+        border-top: 5px solid $pink;
+        a.button {
+            background: $pink;
+        }
+    }
+    &.box_cat_5 {
+        border-top: 5px solid $brown;
+        a.button {
+            background: $brown;
+             color: white;
+        }
+    }
+
+
 
 
 } // END OF BOX
@@ -187,16 +223,17 @@ section#home_page_search {
         }
         input[type="submit"], button {
             text-indent: -10px;
+            position: relative;
             &:after {
                 content:'';
                 background: url('../images/search.svg') no-repeat center center;
                 width: 15px;
-                    background-size: contain;
-                    height: 100%;
-                    display: inline-block;
-                    position: absolute;
-                    top: 0px;
-                    margin-left: 10px;
+                background-size: contain;
+                height: 100%;
+                display: inline-block;
+                position: absolute;
+                top: 0px;
+                margin-left: 10px;
 
             }
         }
@@ -254,6 +291,19 @@ section#become_member { } // #become_member
     form {
         input, select, button {
             margin-bottom: 20px;
+        }
+    }
+    .box {
+
+
+        img {
+            opacity: 0.75;
+            transition: all 0.3s;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+            }
         }
     }
 }
