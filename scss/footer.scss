@@ -75,3 +75,11 @@ $social_icon_size: 40px;
 .youtube_icon {
     background-image: url('../images/social/youtube.svg');
 }
+
+#partners_logos {
+    img {
+        height: 80px;
+        width: auto;
+        margin: 0 15px 10px 0;
+    }
+}
