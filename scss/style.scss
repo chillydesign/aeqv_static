@@ -176,8 +176,7 @@ section#student_slider_section {
 
 .letter_background {
     background: url('../images/letters.svg') repeat ;
-    background-size: 280px;
-    position: absolute;
+    background-size: 700px;
     top:0;
     left: 0;
     width: 100%;
@@ -306,4 +305,22 @@ section#become_member { } // #become_member
             }
         }
     }
+}
+
+.member_box, .teacher_box {
+  background: $green;
+padding: 30px;
+color: antiquewhite;
+border: solid 1px white;
+outline: solid 20px $green;
+margin: 20px 20px 50px 20px;
+
+.big_title:after{
+  border-color: white;
+}
+}
+
+.teacher_box {
+  background: $brown;
+  outline: solid 20px $brown;
 }

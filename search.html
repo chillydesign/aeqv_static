@@ -20,7 +20,7 @@
                         <li><a href="search.html">Cours</a></li>
                         <li><a href="index.html">Galerie</a></li>
                         <li><a href="search.html">Pratique</a></li>
-                        <li><a href="index.html">Apropos</a></li>
+                        <li><a href="index.html">A propos</a></li>
                         <li><a href="search.html">Offres d’emploi</a></li>
                     </ul>
                 </nav>
@@ -29,6 +29,23 @@
         <a href="#" id="menu_button">Menu</a>
     </header>
 
+    <section id="student_slider_section">
+
+        <div class="welcome_text">
+          <h1>Trouver un cours</h1>
+          <p> Lorem ipsum am ne aute noster amet, eu aut imitarentur do admodum multos ita consequat philosophari, ea iudicem firmissimum.</p>
+        </div>
+
+
+        <div class="slick_slider" id="student_slider" >
+          <div class="slide" style="background-image:url(images/aeqv8.jpg)"></div>
+          <div class="slide" style="background-image:url(images/aeqv11.jpg)"></div>
+            <div class="slide" style="background-image:url(images/aeqv1.jpg)"></div>
+            <div class="slide" style="background-image:url(images/aeqv2.jpg)"></div>
+            <div class="slide" style="background-image:url(images/aeqv3.jpg)"></div>
+            <div class="slide" style="background-image:url(images/aeqv5.jpg)"></div>
+        </div>
+    </section>
 
 
     <section id="search_results">
@@ -41,18 +58,29 @@
 
                             <input type="text" name="keyword" id="keyword" placeholder="trouver un cours" />
                             <select name="category" id="category">
-                                <option value="">catégorie</option>
-                                <option value="First">First</option>
-                                <option value="Second">Second</option>
-                                <option value="Third">Third</option>
+                                <option value="">Catégorie</option>
+                                <option value="nouveaute">Nouveauté</option>
+                                <option value="arts">Arts Récréatifs</option>
+                                <option value="culture">Culture</option>
+                                <option value="sport">Détente et Sport</option>
+                                <option value="informatique">Informatique</option>
+                                <option value="jeunes">Jeune public</option>
+                                <option value="langues">Langues</option>
                             </select>
                             <select name="age" id="age">
-                                <option value="">âge</option>
-                                <option value="First">First</option>
-                                <option value="Second">Second</option>
-                                <option value="Third">Third</option>
+                                <option value="">Âge</option>
+                                <option value="enfants">Enfants</option>
+                                <option value="jeunes">Jeunes Adultes</option>
+                                <option value="adultes">Adultes</option>
+                                <option value="seniors">Seniors</option>
                             </select>
-                            <button type="submit" name="search_course">Search</button>
+                            <select name="type" id="type">
+                                <option value="">Type</option>
+                                <option value="ponctuel">Ponctuel</option>
+                                <option value="hebdomadaire">Hebdomadaire</option>
+                                <option value="stage">Stage</option>
+                            </select>
+                            <button type="submit" name="search_course">Rechercher</button>
 
                         </form>
                     </aside>
@@ -62,48 +90,48 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="box box_cat_1">
-                                <h3><a href="#">Course title</a></h3>
+                                <h3><a href="#">Titre du cours</a></h3>
                                 <img src="images/students1.jpg" alt="" />
-                                <a href="#" class="button">Read more</a>
+                                <a href="#" class="button">Lire plus</a>
 
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="box box_cat_2">
-                                <h3><a href="#">Course title</a></h3>
+                                <h3><a href="#">Titre du cours</a></h3>
                                 <img src="images/students2.jpg" alt="" />
-                                <a href="#" class="button">Read more</a>
+                                <a href="#" class="button">Lire plus</a>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="box box_cat_3">
-                                <h3><a href="#">Course title</a></h3>
+                                <h3><a href="#">Titre du cours</a></h3>
                                 <img src="images/students3.jpg" alt="" />
-                                <a href="#" class="button">Read more</a>
+                                <a href="#" class="button">Lire plus</a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="box box_cat_4">
-                                <h3><a href="#">Course title</a></h3>
+                                <h3><a href="#">Titre du cours</a></h3>
                                 <img src="images/students2.jpg" alt="" />
-                                <a href="#" class="button">Read more</a>
+                                <a href="#" class="button">Lire plus</a>
 
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="box box_cat_5">
-                                <h3><a href="#">Course title</a></h3>
+                                <h3><a href="#">Titre du cours</a></h3>
                                 <img src="images/students3.jpg" alt="" />
-                                <a href="#" class="button">Read more</a>
+                                <a href="#" class="button">Lire plus</a>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="box box_cat_1">
-                                <h3><a href="#">Course title</a></h3>
+                                <h3><a href="#">Titre du cours</a></h3>
                                 <img src="images/students1.jpg" alt="" />
-                                <a href="#" class="button">Read more</a>
+                                <a href="#" class="button">Lire plus</a>
                             </div>
                         </div>
                     </div>
@@ -139,23 +167,22 @@
 
                 </div><!-- END OF COL -->
                 <div class="col-sm-4">
-                    <h3>Opening Hours</h3>
+                    <h3>Horaires</h3>
                     <p>du lundi au vendredi de 8h15 à 12h </p>
 
 
-                    <h3>Social</h3>
+                    <h3>Suivez-nous</h3>
                     <p>
                         <a class="social_icon facebook_icon" href="facebook">Facebook</a>
                         <a class="social_icon twitter_icon" href="twitter">twitter</a>
                     </p>
                 </div>
                 <div class="col-sm-4">
-
-                    <h3>Partners</h3>
-                    <div id="partners_logos">
-                        <img src="images/geneve.png" alt="" />
-                        <img src="images/eduqua.png" alt="" />
-                    </div>
+                  <h3>Nos partenaires</h3>
+                  <div id="partners_logos">
+                      <img src="images/geneve.png" alt="" />
+                      <img src="images/eduqua.png" alt="" />
+                  </div>
 
 
                 </div><!-- END OF COL -->

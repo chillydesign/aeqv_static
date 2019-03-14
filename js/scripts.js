@@ -37,7 +37,12 @@
 
         $('.slick_slider').slick({
             dots: true,
-            arrows: false
+            arrows: false,
+            fade: true,
+            autoplay: true,
+ autoplaySpeed: 3000,
+ speed:1000,
+  cssEase: 'ease-in-out'
         });
         // SLIDER
         // SLIDER
