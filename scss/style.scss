@@ -181,7 +181,7 @@ a.box {
         color: $font_color;
     }
     &:hover {
-        transform: scale(1.03);
+        transform: scale(1.02);
     }
 
 }
@@ -266,12 +266,18 @@ section#home_page_search {
             max-width: 48%;
             display: inline-block;
             margin: 0 0 20px;
+            transition: all 0.3s;
+            box-shadow:  0 0 0  darken($pink,10);;
 
 
             @media (min-width: $mobile_width) {
                 width: 23%;
                 max-width: 23%;
                 margin: 0;
+            }
+
+            &:hover {
+                box-shadow:  0 5px 0 0  lighten($pink,10);
             }
         }
 
@@ -289,7 +295,7 @@ section#home_page_search {
                 height: 100%;
                 display: inline-block;
                 position: absolute;
-                top: 0px;
+                top: -3px;
                 margin-left: 10px;
 
             }
@@ -346,18 +352,23 @@ section#become_member { } // #become_member
     }
     form {
 
+
         background: $light_grey;
         padding: 20px 20px 10px;
 
+        .search_section {
+            margin: 0 0 20px;
+        }
+
         input, select, button {
-            margin-bottom: 20px;
+            margin-bottom: 0;
         }
 
         label {
             padding: 0;
             display: inline-block;
             cursor: pointer;
-            font-size: #{$font-size * 0.66};
+            font-size: #{$font-size * 0.666};
             span {
                 transition: all 0.3s;
                 display: inline-block;
@@ -366,7 +377,7 @@ section#become_member { } // #become_member
                 border-radius: 5px;
                 margin: 0 5px 5px 0;
                 letter-spacing: 0.5px;
-                background: transparentize(white, 0.4);
+                background: transparentize(white, 0.5);
 
                 &:hover {
                     background: white;
@@ -385,9 +396,7 @@ section#become_member { } // #become_member
 
 
     }
-        .search_section {
-            margin: 0 0 20px;
-        }
+
 
     .box {
 

@@ -1,6 +1,6 @@
 
 
-$logo_height: 25px;
+$logo_height: 30px;
 $nav_width: 300px;
 
 @media (min-width: $mobile_width) {
@@ -17,29 +17,17 @@ header {
     z-index: 100;
 
 
-
-
-
-    a#branding {
-        display: inline-block;
-        height: $logo_height;
+    a#branding_mobile {
+        display: block;
         width: 100%;
+        max-width: 250px;
         background: url('../images/logo.svg') no-repeat center left;
         background-size: contain;
+        height: $logo_height;
         text-indent: -9999px;
-        padding: 10px 0;
-
         @media (min-width: $mobile_width) {
-            position: absolute;
-            left: 0;
-            top: 30px;
-
-            background-position: center center;
-
+            display: none;
         }
-
-
-
     }
 
 
@@ -47,11 +35,9 @@ header {
     nav {
 
         color: white;
-        position: relative;
-
         position: fixed;
         transition: all 0.3s;
-        z-index: 1000;
+        z-index: 120;
         top: 0;
         left: 0;
         height: 100vh;
@@ -70,9 +56,9 @@ header {
         // MENU FOR DESKTOP
         @media (min-width: $mobile_width) {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            justify-content: space-between;
             transform: translateX(0);
-
             margin: 0;
             position: static;
             height: auto;
@@ -85,6 +71,8 @@ header {
         ul {
 
             padding: 0;
+
+
 
 
             // MENU FOR DESKTOP
@@ -101,6 +89,29 @@ header {
 
             }
 
+
+            &#branding {
+                display: none;
+                @media (min-width: $mobile_width) {
+                    display: block;
+                }
+                li {
+                    width: 200px;
+                }
+                a {
+                    display: inline-block;
+                    height: $logo_height;
+                    width: 100%;
+                    background: url('../images/logo.svg') no-repeat center left;
+                    background-size: contain;
+                    text-indent: -9999px;
+                    padding: 10px 0;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            } // end of ul#branding
 
 
             li {
@@ -176,12 +187,12 @@ header {
 
 #menu_button {
     display: inline-block;
-    height: 32px;
-    width: 32px;
+    height: 34px;
+    width: 42px;
     position: absolute;
     z-index: 1000;
-    top: 20px;
-    right: 20px;
+    top: 16px;
+    right: 11px;
     background: url('../images/menu.svg') no-repeat center;
     background-size: 30px;
     text-indent: -9999px;

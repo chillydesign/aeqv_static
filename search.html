@@ -13,12 +13,17 @@
 
     <header>
         <div class="container">
-            <a href="index.html" id="branding">AEQV</a>
+            <a href="index.html" id="branding_mobile">AEQV</a>
             <nav>
                 <ul>
                     <li><a href="search.html">Cours</a></li>
                     <li><a href="index.html">Actualités</a></li>
                     <li><a href="index.html">A propos</a></li>
+                </ul>
+                <ul id="branding">
+                    <li>
+                        <a href="index.html">AEQV</a>
+                    </li>
                 </ul>
                 <ul>
                     <li><a href="search.html">Transmettez votre passion</a></li>
@@ -37,8 +42,10 @@
                 <aside class="col-sm-3 sticky_on_desktop">
 
                     <form action="search.html" >
+                        <div class="search_section">
+                            <input type="text" name="keyword" id="keyword" placeholder="trouver un cours" />
 
-                        <input type="text" name="keyword" id="keyword" placeholder="trouver un cours" />
+                        </div>
 
                         <div class="search_section">
                             <h4>Catégorie</h4>
@@ -63,7 +70,11 @@
                             <label><input type="checkbox" name="type" value="hebdomadaire" /><span>Hebdomadaire</span></label>
                             <label><input type="checkbox" name="type" value="stage" /><span>Stage</span></label>
                         </div>
-                        <button type="submit" name="search_course">Rechercher</button>
+                        <div class="search_section">
+                            <button type="submit" name="search_course">Rechercher</button>
+                        </div>
+
+
                     </form>
                 </aside>
 
