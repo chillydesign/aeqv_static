@@ -96,18 +96,18 @@ header {
 
                 a {
                     display: block;
-                    color: $pink;
+                    color: $font_color;
                     text-decoration: none;
                     padding:  15px;
                     margin:  0 0;
                     position: relative;
                     font-weight: bold;
                     &:link, &:visited, &:active {
-                        color: $pink;
+                        color: white;
                     }
 
                     &:hover {
-                        background: darken($pink, 10);
+                        background: $medium_grey;
                         color: white;
                     }
 
@@ -115,8 +115,19 @@ header {
                         display: inline-block;
                         padding: 10px;
                         margin-top: 10px;
-                    }
-                }
+
+
+                        &:link, &:visited, &:active {
+                            color: $font_color;
+                        }
+
+                        &:hover {
+                            color: white ;
+                        }
+
+
+                    } // end of non mobile styles
+                } // end of a
 
 
 
@@ -124,7 +135,7 @@ header {
                 &:hover {
 
 
-                }
+                } // end of li:hover
 
             } // end of li
 

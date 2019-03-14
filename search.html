@@ -18,8 +18,6 @@
                     <ul>
                         <li><a href="index.html">Actualités</a></li>
                         <li><a href="search.html">Cours</a></li>
-                        <li><a href="index.html">Galerie</a></li>
-                        <li><a href="search.html">Pratique</a></li>
                         <li><a href="index.html">A propos</a></li>
                         <li><a href="search.html">Offres d’emploi</a></li>
                     </ul>
@@ -29,114 +27,167 @@
         <a href="#" id="menu_button">Menu</a>
     </header>
 
-    <section id="student_slider_section">
-
-        <div class="welcome_text">
-          <h1>Trouver un cours</h1>
-          <p> Lorem ipsum am ne aute noster amet, eu aut imitarentur do admodum multos ita consequat philosophari, ea iudicem firmissimum.</p>
-        </div>
-
-
-        <div class="slick_slider" id="student_slider" >
-          <div class="slide" style="background-image:url(images/aeqv8.jpg)"></div>
-          <div class="slide" style="background-image:url(images/aeqv11.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv1.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv2.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv3.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv5.jpg)"></div>
-        </div>
-    </section>
-
+    <h1 class="for_screen_readers">Trouver un cours</h1>
 
     <section id="search_results">
         <div class="container">
             <div class="row">
 
-                <div class="col-sm-3">
-                    <aside>
-                        <form action="search.html">
+                <aside class="col-sm-3 sticky_on_desktop">
 
-                            <input type="text" name="keyword" id="keyword" placeholder="trouver un cours" />
-                            <select name="category" id="category">
-                                <option value="">Catégorie</option>
-                                <option value="nouveaute">Nouveauté</option>
-                                <option value="arts">Arts Récréatifs</option>
-                                <option value="culture">Culture</option>
-                                <option value="sport">Détente et Sport</option>
-                                <option value="informatique">Informatique</option>
-                                <option value="jeunes">Jeune public</option>
-                                <option value="langues">Langues</option>
-                            </select>
-                            <select name="age" id="age">
-                                <option value="">Âge</option>
-                                <option value="enfants">Enfants</option>
-                                <option value="jeunes">Jeunes Adultes</option>
-                                <option value="adultes">Adultes</option>
-                                <option value="seniors">Seniors</option>
-                            </select>
-                            <select name="type" id="type">
-                                <option value="">Type</option>
-                                <option value="ponctuel">Ponctuel</option>
-                                <option value="hebdomadaire">Hebdomadaire</option>
-                                <option value="stage">Stage</option>
-                            </select>
-                            <button type="submit" name="search_course">Rechercher</button>
+                    <form action="search.html" >
 
-                        </form>
-                    </aside>
-                </div><!-- end of col -->
+                        <input type="text" name="keyword" id="keyword" placeholder="trouver un cours" />
+                        <select name="category" id="category">
+                            <option value="">Catégorie</option>
+                            <option value="nouveaute">Nouveauté</option>
+                            <option value="arts">Arts Récréatifs</option>
+                            <option value="culture">Culture</option>
+                            <option value="sport">Détente et Sport</option>
+                            <option value="informatique">Informatique</option>
+                            <option value="jeunes">Jeune public</option>
+                            <option value="langues">Langues</option>
+                        </select>
+                        <select name="age" id="age">
+                            <option value="">Âge</option>
+                            <option value="enfants">Enfants</option>
+                            <option value="jeunes">Jeunes Adultes</option>
+                            <option value="adultes">Adultes</option>
+                            <option value="seniors">Seniors</option>
+                        </select>
+                        <select name="type" id="type">
+                            <option value="">Type</option>
+                            <option value="ponctuel">Ponctuel</option>
+                            <option value="hebdomadaire">Hebdomadaire</option>
+                            <option value="stage">Stage</option>
+                        </select>
+                        <button type="submit" name="search_course">Rechercher</button>
+                    </form>
+                </aside>
+
                 <div class="col-sm-9">
 
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="box box_cat_1">
-                                <h3><a href="#">Titre du cours</a></h3>
-                                <img src="images/students1.jpg" alt="" />
-                                <a href="#" class="button">Lire plus</a>
+                            <a class="box box_course box_cat_1" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
 
-                            </div>
+
                         </div>
                         <div class="col-sm-4">
-                            <div class="box box_cat_2">
-                                <h3><a href="#">Titre du cours</a></h3>
-                                <img src="images/students2.jpg" alt="" />
-                                <a href="#" class="button">Lire plus</a>
-                            </div>
+                            <a class="box box_course box_cat_2" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
                         </div>
                         <div class="col-sm-4">
-                            <div class="box box_cat_3">
-                                <h3><a href="#">Titre du cours</a></h3>
-                                <img src="images/students3.jpg" alt="" />
-                                <a href="#" class="button">Lire plus</a>
-                            </div>
+                            <a class="box box_course box_cat_3" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="box box_cat_4">
-                                <h3><a href="#">Titre du cours</a></h3>
-                                <img src="images/students2.jpg" alt="" />
-                                <a href="#" class="button">Lire plus</a>
-
-                            </div>
+                            <a class="box box_course box_cat_4" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
                         </div>
                         <div class="col-sm-4">
-                            <div class="box box_cat_5">
-                                <h3><a href="#">Titre du cours</a></h3>
-                                <img src="images/students3.jpg" alt="" />
-                                <a href="#" class="button">Lire plus</a>
-                            </div>
+                            <a class="box box_course box_cat_5" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
                         </div>
                         <div class="col-sm-4">
-                            <div class="box box_cat_1">
-                                <h3><a href="#">Titre du cours</a></h3>
-                                <img src="images/students1.jpg" alt="" />
-                                <a href="#" class="button">Lire plus</a>
-                            </div>
+                            <a class="box box_course box_cat_6" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="box box_workshop box_cat_1" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
 
+
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="box box_workshop box_cat_2" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="box box_workshop box_cat_3" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="box box_workshop box_cat_4" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="box box_workshop box_cat_5" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a class="box box_workshop box_cat_6" href="#">
+                                <span class="box_content">
+                                <span class="box_title">Titre du cours</span>
+                                <span class="box_description">A partir du 28 septembre 2018 à Versoix</span>
+                                </span>
+                                <span class="box_age">Pour adulte</span>
+                            </a>
+                        </div>
+                    </
 
 
                 </div><!-- end of col -->
@@ -167,6 +218,8 @@
 
                 </div><!-- END OF COL -->
                 <div class="col-sm-4">
+
+
                     <h3>Horaires</h3>
                     <p>du lundi au vendredi de 8h15 à 12h </p>
 
@@ -178,11 +231,15 @@
                     </p>
                 </div>
                 <div class="col-sm-4">
-                  <h3>Nos partenaires</h3>
-                  <div id="partners_logos">
-                      <img src="images/geneve.png" alt="" />
-                      <img src="images/eduqua.png" alt="" />
-                  </div>
+                    <h3>Extra nav</h3>
+                    <ul>
+                        <li><a href="index.html">Galerie</a></li>
+                        <li><a href="search.html">Pratique</a></li>
+                    </ul>
+                    <h3>Nos partenaires</h3>
+                    <div id="partners_logos">
+                        <img src="images/geneve.png" alt="" />
+                    </div>
 
 
                 </div><!-- END OF COL -->

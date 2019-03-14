@@ -36,13 +36,14 @@
         // SLIDER
 
         $('.slick_slider').slick({
-            dots: true,
+            dots: false,
             arrows: false,
             fade: true,
             autoplay: true,
- autoplaySpeed: 3000,
- speed:1000,
-  cssEase: 'ease-in-out'
+            autoplaySpeed: 7000,
+            speed: 1000,
+            cssEase: 'ease-in-out',
+            pauseOnHover: false
         });
         // SLIDER
         // SLIDER
