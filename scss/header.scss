@@ -1,6 +1,6 @@
 
 
-$logo_height: 40px;
+$logo_height: 25px;
 $nav_width: 300px;
 
 @media (min-width: $mobile_width) {
@@ -17,23 +17,26 @@ header {
     z-index: 100;
 
 
-    .header_inner {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    nav, #branding {
-        flex: 1 auto;
 
-    }
 
     a#branding {
         display: inline-block;
         height: $logo_height;
-        width: #{($logo_height * 2.821348223 )}; // logo ratio w/h = 2.821348223
+        width: 100%;
         background: url('../images/logo.svg') no-repeat center left;
         background-size: contain;
         text-indent: -9999px;
+        padding: 10px 0;
+
+        @media (min-width: $mobile_width) {
+            position: absolute;
+            left: 0;
+            top: 30px;
+
+            background-position: center center;
+
+        }
 
 
 
@@ -46,36 +49,55 @@ header {
         color: white;
         position: relative;
 
-        ul {
-            padding: 0;
-            position: fixed;
-            transition: all 0.3s;
-            z-index: 1000;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: $nav_width;
-            overflow: scroll;
-            background: transparentize($font_color, 0.03);
-            margin: 0;
-            transform: translateX(#{$nav_width * -1 });
+        position: fixed;
+        transition: all 0.3s;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: $nav_width;
+        overflow: scroll;
+        background: transparentize($font_color, 0.03);
+        margin: 0;
+        transform: translateX(#{$nav_width * -1 });
 
-            &.menu_visible {
-                transform: translateX(0);
-            }
+
+
+        &.menu_visible {
+            transform: translateX(0);
+        }
+
+        // MENU FOR DESKTOP
+        @media (min-width: $mobile_width) {
+            display: flex;
+            flex-wrap: wrap;
+            transform: translateX(0);
+
+            margin: 0;
+            position: static;
+            height: auto;
+            width: auto;
+            background: none;
+            overflow: visible;
+            text-align: center;
+        }
+
+        ul {
+
+            padding: 0;
 
 
             // MENU FOR DESKTOP
             @media (min-width: $mobile_width) {
-                transform: translateX(0);
-                display: block;
-                margin: 0;
-                position: static;
-                height: auto;
-                width: auto;
-                background: none;
-                overflow: visible;
-                text-align: right;
+                flex: 1 auto;
+
+                &:first-child {
+                    text-align: left;
+                }
+
+                &:last-child {
+                    text-align: right;
+                }
 
             }
 
