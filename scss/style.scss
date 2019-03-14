@@ -352,7 +352,43 @@ section#become_member { } // #become_member
         input, select, button {
             margin-bottom: 20px;
         }
+
+        label {
+            padding: 0;
+            display: inline-block;
+            cursor: pointer;
+            font-size: #{$font-size * 0.66};
+            span {
+                transition: all 0.3s;
+                display: inline-block;
+                padding: 7px;
+                text-transform: uppercase;
+                border-radius: 5px;
+                margin: 0 5px 5px 0;
+                letter-spacing: 0.5px;
+                background: transparentize(white, 0.4);
+
+                &:hover {
+                    background: white;
+                }
+            }
+
+            input[type="checkbox"] {
+                display: none;
+            }
+        }
+
+         input:checked + span {
+            background: $green;
+            color: white;
+        }
+
+
     }
+        .search_section {
+            margin: 0 0 20px;
+        }
+
     .box {
 
 
