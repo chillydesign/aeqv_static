@@ -348,7 +348,11 @@ section#become_member { } // #become_member
     position: relative;
     aside {
         margin-bottom: 15px;
-        top: 15px; // for position sticky
+
+        @media (min-width: $mobile_width) {
+            margin-bottom: 0;
+            top: 15px; // for position sticky
+        }
     }
     form {
 
