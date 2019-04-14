@@ -368,36 +368,10 @@ section#become_member { } // #become_member
             margin-bottom: 0;
         }
 
-        label {
-            padding: 0;
-            display: inline-block;
-            cursor: pointer;
+        label.radio_label {
             font-size: #{$font-size * 0.666};
-            span {
-                transition: all 0.3s;
-                display: inline-block;
-                padding: 7px;
-                text-transform: uppercase;
-                border-radius: 5px;
-                margin: 0 5px 5px 0;
-                letter-spacing: 0.5px;
-                background: transparentize(white, 0.5);
 
-                &:hover {
-                    background: white;
-                }
-            }
-
-            input[type="checkbox"] {
-                display: none;
-            }
         }
-
-         input:checked + span {
-            background: $green;
-            color: white;
-        }
-
 
     }
 
@@ -462,9 +436,75 @@ section#become_member { } // #become_member
         }
         span {
             display: block;
-            color: $medium_grey;
+            color: $dark_grey;
             font-size: 90%;
         }
     }
 }
 // SINGLE COURSE
+
+
+
+
+
+ul.breadcrumbs {
+    margin: 0 0 30px;
+    padding: 0;
+    li {
+        background: lighten($light_grey, 5);
+        text-transform: uppercase;
+        font-size: 1.3em;
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0;
+        color: $dark_grey;
+        &.current {
+            color: $font_color;
+            font-weight: bold;
+            background: $light_grey;
+
+        }
+    }
+}
+
+p.meta {
+    color: $dark_grey;
+    font-style: italic;
+    font-size: 1.3em;
+    padding: 0 0 5px;
+    margin: 0;
+
+}
+
+.alert {
+    padding: 10px;
+    background: $blue;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 0 30px;
+    font-size: $font_size;
+    text-shadow: 0 2px 2px scale-color($blue, $lightness: -20%);
+
+    &.alert_success {
+        background-color: $green;
+        color: scale-color($green, $lightness: 90%);
+        text-shadow: 0 2px 2px scale-color($green, $lightness: -20%);
+    }
+    &.alert_warning {
+        background-color: $red;
+        color: scale-color($red, $lightness: 90%);
+        text-shadow: 0 2px 2px scale-color($red, $lightness: -20%);
+    }
+}
+
+
+section#inscription_form {
+    form {
+         background: $light_grey;
+         padding: 30px  30px 5px;
+
+    }
+
+
+}

@@ -15,12 +15,13 @@ $font_stack: 'Founders Grotesk',   -apple-system, BlinkMacSystemFont, "Segoe UI"
 
 $black: #4e4a47;
 $font_color: $black;
-$medium_grey:  lighten($font_color, 15);
-$light_grey:  lighten($font_color, 62);
+$dark_grey:  lighten($font_color, 15);
+$medium_grey:  lighten($font_color, 35);
+$light_grey:  lighten($font_color, 63);
 
 
 // $light_grey: #eeeeee;
-// $medium_grey: #707070;]
+// $dark_grey: #707070;]
 
 
 
