@@ -51,6 +51,27 @@
 
 
 
+        // INSCRIPTION FORM
+        // INSCRIPTION FORM
+
+        var $inscription_steps = $('.inscription_form_step');
+        $inscription_steps.hide();
+        $inscription_steps.first().show();
+
+        $('button.move_next_step').on('click', function(e){
+            e.preventDefault();
+            var $this = $(this);
+            var $step = $this.data('step');
+            // $inscription_steps.hide();
+            $('#step_' + $step).show();
+
+        });
+
+        // INSCRIPTION FORM
+        // INSCRIPTION FORM
+
+
+
 
         // MAP
         // MEMBERS MAP

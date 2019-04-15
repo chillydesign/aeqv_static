@@ -501,8 +501,13 @@ p.meta {
 
 section#inscription_form {
     form {
-         background: $light_grey;
-         padding: 30px  30px 5px;
+
+         .inscription_form_step {
+             background: $light_grey;
+             padding: 30px  30px 5px;
+             margin: 0 0 20px;
+             // border-bottom: 20px solid white;
+         }
 
     }
 
