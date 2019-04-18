@@ -107,7 +107,7 @@
                     <div class="box pink_box">
                         <img src="images/lettres_AEQV.jpg" alt="" />
                     </div>
-                </div><!-- END OF COL -->
+                </div>
             </div>
         </div><!-- end of container -->
     </section>

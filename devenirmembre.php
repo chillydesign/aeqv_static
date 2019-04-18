@@ -3,19 +3,38 @@
 
 
 
+<section class="latest_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Devenir membre de l'association</h1>
+                <p>
+                  Notre association existe avant tout au travers de ses membres.<br>
+                  En devenant membre, vous permettez à notre association de poursuivre son activité auprès de la population de Versoix et de ses environs qui vise à proposer des formations et des loisirs proches de chez vous.
+                </p>
+                <p>Vous bénéficiez aussi de nombreux avantages : </p>
+                <ul>
+                  <li>nombre illimité d’essais gratuits*</li>
+                  <li>participation offerte aux sorties culturelles organisées par l’association</li>
+                  <li>réduction du prix des entrées CinéVersoix</li>
+                  <li>au choix : un billet gratuit au CinéVersoix ou au spectacle de danse</li>
+                </ul>
+                <p><em>*Avantage non cumulable sur un même cours</em></p>
+            </div><!-- END OF COL -->
+            <div class="col-sm-6">
+                <div class="box pink_box">
+                    <img src="images/aeqv4.jpg" alt="" />
+                </div>
+            </div><!-- END OF COL -->
+        </div>
+    </div><!-- end of container -->
+</section>
+
+
 
     <section id="inscription_form">
         <div class="container">
-            <ul class="breadcrumbs">
-                <li class="current">étape 1</li>
-                <li>étape 2</li>
-                <li>étape 3</li>
-                <li>étape 4</li>
-                <li>confirmation</li>
-            </ul>
 
-
-            <h1>Inscription en ligne</h1>
 
 
             <div class="row">

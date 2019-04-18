@@ -289,3 +289,12 @@ table {
     border-left: solid 1px #555;
   }
 }
+
+p+ul {
+  margin-top: -30px;
+}
+
+ul {
+  margin-left: 30px;
+  list-style: circle;
+}
