@@ -307,10 +307,22 @@ section#home_page_search {
 
 
 
+section.latest_section {
+  a.button {
+    margin-bottom: 50px;
+    @media (min-width: $mobile_width) {
+      margin-bottom: 0px;
+    }
+
+  }
+}
+
+
 section#latest_workshop { } // #latest_workshop
 section#latest_course { } // #latest_course
 section#become_teacher { } // #become_teacher
 section#become_member { } // #become_member
+
 
 .big_title {
     font-size: 4.5em;

@@ -58,8 +58,10 @@ li {
 strong, b {
     font-weight: bold;
 }
+
 em, i {
-    font-size: italic;
+    font-style: italic;
+    font-weight: 300;
 }
 
 a {
@@ -268,4 +270,22 @@ input[type="submit"], button {
     &:hover {
         background-color: darken($blue, 10);
     }
+}
+
+
+table {
+  width: 100%;
+  max-width: 100%;
+  overflow-y: scroll;
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: solid 1px #555;
+  border-right: solid 1px #555;
+  margin-bottom: 30px;
+
+  td, th {
+    padding: 8px 0  3px;
+    border-top: solid 1px #555;
+    border-left: solid 1px #555;
+  }
 }

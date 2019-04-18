@@ -43,13 +43,10 @@
         <div class="dark_bg"></div>
 
         <div class="slick_slider" id="student_slider" >
-            <div class="slide" style="background-image:url(images/aeqv1.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv2.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv3.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv5.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv8.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv11.jpg)"></div>
-            <div class="slide" style="background-image:url(images/aeqv12.jpg)"></div>
+            <div class="slide" style="background-image:url(images/aeqv-slide1.jpg)"></div>
+            <div class="slide" style="background-image:url(images/aeqv-slide2.jpg)"></div>
+            <div class="slide" style="background-image:url(images/aeqv-slide3.jpg)"></div>
+            <div class="slide" style="background-image:url(images/aeqv-slide4.jpg)"></div>
         </div>
     </section>
 
@@ -60,21 +57,21 @@
 
                 <input type="text" name="keyword" id="keyword" placeholder="trouver un cours" />
                 <select name="category" id="category">
-                    <option value="">Catégorie</option>
+                    <option value="">Secteur</option>
                     <option value="nouveaute">Nouveauté</option>
-                    <option value="arts">Arts Récréatifs</option>
-                    <option value="culture">Culture</option>
+                    <option value="jeunepublic">Jeune public</option>
                     <option value="sport">Détente et Sport</option>
-                    <option value="informatique">Informatique</option>
-                    <option value="jeunes">Jeune public</option>
                     <option value="langues">Langues</option>
+                    <option value="culture">Culture générale</option>
+                    <option value="arts">Arts Créatifs</option>
+                    <option value="informatique">Informatique</option>
                 </select>
                 <select name="age" id="age">
                     <option value="">Âge</option>
-                    <option value="enfants">Enfants</option>
-                    <option value="jeunes">Jeunes Adultes</option>
-                    <option value="adultes">Adultes</option>
-                    <option value="seniors">Seniors</option>
+                    <option value="enfants">4 à 9 ans</option>
+                    <option value="jeunes">10 à 18 ans</option>
+                    <option value="adultes">dès 18 ans</option>
+                    <option value="seniors">dès 50 ans</option>
                 </select>
                 <button type="submit" name="search_course">Rechercher</button>
 
@@ -83,13 +80,21 @@
     </section>
 
 
-    <section id="latest_workshop">
+    <section id="latest_workshop" class="latest_section">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-right">
                     <h2 class="big_title">Cours <br>du mois</h2>
-                    <h3>Guitare électrique</h3>
-                    <p> Lorem ea iudicem firmissimum, velit an pariatur an dolore eu qui deserunt relinqueret</p>
+                    <h3>Découvrez les nouveautés</h3>
+                    <ul>
+                      <li>Guitare électrique en groupe</li>
+                      <li>Edition de photos</li>
+                      <li>Poterie</li>
+                      <li>Anglais niveau 1P/2P	</li>
+                      <li>Comptabilité Association</li>
+                    </ul>
+                    <br>
+                    <br>
                     <a href="#" class="button">En savoir plus</a>
                 </div><!-- END OF COL -->
                 <div class="col-sm-6">
@@ -102,7 +107,7 @@
     </section>
 
 
-    <section id="latest_course">
+    <section id="latest_course" class="latest_section">
         <div class="container">
             <div class="row ">
                 <div class="col-sm-6 col-sm-push-6">
@@ -122,30 +127,38 @@
     </section>
 
 
-
-    <section id="become_member" class="letter_background">
+    <section id="become_member" class="latest_section">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-right">
-                    <div class="member_box">
-                        <h2 class="big_title">Devenir <br>membre</h2>
-                        <p>Do excepteur cohaerescant, voluptate te legam de vidisse amet tempor non malis malnibus. In minim duis aut pariatur, magna id an magna excepteur te ad aliqua fugiat fugiat proident, voluptate an excepteur, qui magna ingeniis se se nosm.</p>
-                        <a href="#" class="button">Devenir membre</a>
+                  <h2 class="big_title">Devenir <br>membre</h2>
+                  <p>Do excepteur cohaerescant, voluptate te legam de vidisse amet tempor non malis malnibus. In minim duis aut pariatur, magna id an magna excepteur te ad aliqua fugiat fugiat proident, voluptate an excepteur, qui magna ingeniis se se nosm.</p>
+                  <a href="#" class="button">Devenir membre</a>
+                </div><!-- END OF COL -->
+                <div class="col-sm-6">
+                    <div class="box pink_box">
+                        <img src="images/lettres_AEQV.jpg" alt="" />
                     </div>
-                    <div class="box pink_box" style="margin-bottom:50px;">
+                </div><!-- END OF COL -->
+            </div>
+        </div><!-- end of container -->
+    </section>
+
+
+    <section id="become_teacher" class="latest_section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-6 col-sm-push-6">
+                  <h2 class="big_title ">Rejoindre l'équipe <br>enseignante</h2>
+                  <p>In minim duis aut pariatur, magna id an magna excepteur te ad aliqua fugiat fugiat proident, voluptate an excepteur, qui magna ingeniis se se nosm. Do excepteur cohaerescant, voluptate te legam de vidisse amet tempor non malis malnibus. </p>
+                  <a href="#" class="button">M'inscrire</a>
+                </div><!-- END OF COL -->
+                <div class="col-sm-6 col-sm-pull-6">
+                    <div class="box green_box">
                         <img src="images/aeqv10.jpg" alt="" />
                     </div>
                 </div><!-- END OF COL -->
-                <div class="col-sm-6">
-                    <div class="box blue_box" style="margin-bottom:50px;">
-                        <img src="images/aeqv9.jpg" alt="" />
-                    </div>
-                    <div class="teacher_box">
-                        <h2 class="big_title ">Rejoindre l'équipe <br>enseignante</h2>
-                        <p>In minim duis aut pariatur, magna id an magna excepteur te ad aliqua fugiat fugiat proident, voluptate an excepteur, qui magna ingeniis se se nosm. Do excepteur cohaerescant, voluptate te legam de vidisse amet tempor non malis malnibus. </p>
-                        <a href="#" class="button">M'inscrire</a>
-                    </div>
-                </div><!-- END OF COL -->
+
             </div>
         </div><!-- end of container -->
     </section>
@@ -184,7 +197,7 @@
                     </p>
                 </div>
                 <div class="col-sm-4">
-                    <h3>Extra nav</h3>
+                    <h3>Liens utiles</h3>
                     <ul>
                         <li><a href="index.html">Galerie</a></li>
                         <li><a href="search.html">Pratique</a></li>
