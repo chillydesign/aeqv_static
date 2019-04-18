@@ -71,6 +71,7 @@ header {
         ul {
 
             padding: 0;
+            margin: 0;
 
 
 
@@ -166,9 +167,46 @@ header {
 
 
                 &:hover {
-
+                    ul  {
+                        display: block;
+                    }
 
                 } // end of li:hover
+
+
+                ul {
+
+                    @media (min-width: 768px) {
+                        position: absolute;
+                        top: 90%;
+                        left: 0;
+                        width: 200px;
+                        background: $medium_grey;
+                        text-align: left !important;
+                        display: none;
+
+                    }
+                    li {
+                        font-size: 0.85em;
+
+                        display: block;
+
+                        a {
+                            padding-left:  35px;
+
+                            display: block;
+
+                            @media (min-width: 768px) {
+                                padding: 15px;
+                                margin: 0;
+                                border-top:  1px solid lighten($medium_grey,3);
+                                border-bottom: 1px solid darken($medium_grey,3);
+                            }
+
+
+                        }
+                    }
+                } // end of ul submenu
 
             } // end of li
 

@@ -17,7 +17,14 @@
                 <ul>
                     <li><a href="search.php">Cours</a></li>
                     <li><a href="index.php">Actualités</a></li>
-                    <li><a href="index.php">A propos</a></li>
+                    <li>
+                        <a href="apropos.php">A propos</a>
+                        <ul>
+                            <li><a href="apropos.php">Submenu 1</a></li>
+                            <li><a href="apropos.php">Submenu 2</a></li>
+                            <li><a href="apropos.php">Submenu 3</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul id="branding">
                     <li>
