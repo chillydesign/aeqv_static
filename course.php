@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AEQV</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-
-    <header>
-        <div class="container">
-            <a href="index.html" id="branding_mobile">AEQV</a>
-            <nav>
-                <ul>
-                    <li><a href="search.html">Cours</a></li>
-                    <li><a href="index.html">Actualités</a></li>
-                    <li><a href="index.html">A propos</a></li>
-                </ul>
-                <ul id="branding">
-                    <li>
-                        <a href="index.html">AEQV</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li><a href="search.html">Transmettez votre passion</a></li>
-                </ul>
-            </nav>
-        </div>
-        <a href="#" id="menu_button">Menu</a>
-    </header>
+<?php include('includes/header.php'); ?>
 
 
 
@@ -70,7 +38,7 @@
                     </table>
                     <p><em>** l’écolage des personnes domiciliées en dehors des communes subventionnant l’Association (clic -> redirigées vers les conditions générales point 6) est majoré de CHF 35.- / an. </em></p>
 
-                    <a href="inscription.html" class="button margin_bottom">S'inscrire</a>
+                    <a href="inscription.php" class="button margin_bottom">S'inscrire</a>
 
                     <p><strong>REMARQUE: Ce cours a déjà eu lieu, pas d'inscription possible.</strong></p>
 
@@ -106,71 +74,4 @@
     </section>
 
 
-
-
-    <footer>
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-
-                    <h3>Contact</h3>
-                    <p>Association Ecole & Quartier Versoix <br>
-                        Collège des Colombières <br>
-                        1290 Versoix - CH <br>
-                        tél. 022 388 24 44 <br>
-                        <a href="mailto:info@aeqv.ch">info@aeqv.ch</a>
-                    </p>
-
-                    <p>Secrétariat : <br>
-                        salle 332, 3e étage<br>
-                        CCP 12-8388-3<br>
-                    </p>
-
-                </div><!-- END OF COL -->
-                <div class="col-sm-4">
-                    <h3>Horaires</h3>
-                    <p>du lundi au vendredi de 8h15 à 12h </p>
-
-
-                    <h3>Suivez-nous</h3>
-                    <p>
-                        <a class="social_icon facebook_icon" href="facebook">Facebook</a>
-                        <a class="social_icon twitter_icon" href="twitter">twitter</a>
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Liens utiles</h3>
-                    <ul>
-                        <li><a href="index.html">Galerie</a></li>
-                        <li><a href="search.html">Pratique</a></li>
-                    </ul>
-
-                    <h3>Nos partenaires</h3>
-                    <div id="partners_logos">
-                        <img src="images/geneve.png" alt="" />
-                    </div>
-
-
-                </div><!-- END OF COL -->
-            </div>
-        </div>
-
-
-
-
-        <p id="copyright_notice">
-            &copy; 2019 AEQV |
-            <a href="https://webfactor.ch" target="_blank">Website by Webfactor</a>
-        </p>
-
-
-    </footer>
-
-
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-</body>
-</html>
+<?php include('includes/footer.php'); ?>
