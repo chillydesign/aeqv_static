@@ -5,8 +5,10 @@
 
     <section>
         <div class="container">
-            <h1>Titre du cours</h1>
-
+            <div class="course_title">
+                <h1>Titre du cours</h1>
+                <img src="images/eduqua.png" alt="Eduqua" />
+            </div>
 
             <div class="row">
                 <div class="col-sm-6">
