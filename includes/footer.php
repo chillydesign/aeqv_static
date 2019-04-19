@@ -63,6 +63,7 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

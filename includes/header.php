@@ -20,9 +20,10 @@
                     <li>
                         <a href="apropos.php">A propos</a>
                         <ul>
-                            <li><a href="apropos.php">Submenu 1</a></li>
-                            <li><a href="apropos.php">Submenu 2</a></li>
-                            <li><a href="apropos.php">Submenu 3</a></li>
+                            <li><a href="apropos.php">A propos</a></li>
+                            <li><a href="comite.php">Le comité</a></li>
+                            <li><a href="devenirmembre.php">Devenir membre de l'association</a></li>
+                            <li><a href="labeleduqua.php">Label eduQua</a></li>
                         </ul>
                     </li>
                 </ul>

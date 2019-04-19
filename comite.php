@@ -4,8 +4,8 @@
     <section id="student_slider_section">
 
         <div class="welcome_text">
-            <p>Nam ne aute noster amet, eu aut imitarentur do admodum multos ita consequat philosophari, ea iudicem firmissimum, velit an pariatur an dolore eu qui deserunt relinqueret, esse expetendis de praetermissum, id singulis familiaritatem.</p>
-            <a href="#" class="button">Découvrir nos cours</a>
+          <h1>Comité</h1>
+          <p>Le comité de l’association compte 13 membres, élus lors de l’assemblée générale en février de chaque année. </p>
 
         </div>
         <div class="dark_bg"></div>
@@ -18,12 +18,12 @@
         </div>
     </section>
 
-<section>
+<!-- <section>
   <div class="container" style="text-align:center;">
     <h1>Comité</h1>
     <p>Le comité de l’association compte 13 membres, élus lors de l’assemblée générale en février de chaque année. </p>
   </div>
-</section>
+</section> -->
 
 
 

@@ -101,7 +101,7 @@
                 <div class="col-sm-6 col-sm-right">
                   <h2 class="big_title">Devenir <br>membre</h2>
                   <p>Do excepteur cohaerescant, voluptate te legam de vidisse amet tempor non malis malnibus. In minim duis aut pariatur, magna id an magna excepteur te ad aliqua fugiat fugiat proident, voluptate an excepteur, qui magna ingeniis se se nosm.</p>
-                  <a href="#" class="button">Devenir membre</a>
+                  <a href="devenirmembre.php" class="button">Devenir membre</a>
                 </div><!-- END OF COL -->
                 <div class="col-sm-6">
                     <div class="box pink_box">
