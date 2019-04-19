@@ -309,13 +309,13 @@ section#home_page_search {
 
 
 section.latest_section {
-  a.button {
-    margin-bottom: 50px;
-    @media (min-width: $mobile_width) {
-      margin-bottom: 0px;
-    }
+    a.button {
+        margin-bottom: 50px;
+        @media (min-width: $mobile_width) {
+            margin-bottom: 0px;
+        }
 
-  }
+    }
 }
 
 
@@ -429,6 +429,26 @@ section#become_member { } // #become_member
 
 
 // SINGLE COURSE
+
+.course_title {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 40px;
+    h1 {
+        flex: 1 auto;
+        padding: 0;
+        margin: 0;
+    }
+    img {
+        width: 100px;
+        min-width: 100px;
+        height: auto;
+        margin-left: 40px;
+
+    }
+}
 .course_infos {
     display: flex;
     flex-wrap: wrap;
@@ -515,12 +535,12 @@ p.meta {
 section#inscription_form {
     form {
 
-         .inscription_form_step {
-             background: $light_grey;
-             padding: 30px  30px 5px;
-             margin: 0 0 20px;
-             // border-bottom: 20px solid white;
-         }
+        .inscription_form_step {
+            background: $light_grey;
+            padding: 30px  30px 5px;
+            margin: 0 0 20px;
+            // border-bottom: 20px solid white;
+        }
 
     }
 
