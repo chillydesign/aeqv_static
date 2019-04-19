@@ -44,7 +44,7 @@
 
                                 <div class="form_field">
                                     <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>Devenez membre</span></label>
-                                    <p class="meta"> pour CHF 30.- de plus, devenez membre de notre association et bénéficiez des nombreux avantages : tous les essais gratuits, entrées pour le CinéVersoix, invitations à des spectacles et manifestations, <a href="#">Plus d’infos </a> fenêtre qui s’ouvre dans un autre onglet avec la page « à propos » </p>
+                                    <p class="meta"> pour CHF 30.- de plus, devenez membre de notre association et bénéficiez des nombreux avantages : tous les essais gratuits, entrées pour le CinéVersoix, invitations à des spectacles et manifestations, <a href="devenirmembre.php" target="_blank">Plus d’infos </a> </p>
                                 </div>
 
 
@@ -72,7 +72,7 @@
                             </div>
 
                             <div class="form_field">
-                                <button type="submit" class="move_next_step" data-step="2">Continue</button>
+                                <button type="submit" class="move_next_step" data-step="2">Continuer</button>
                             </div>
 
 
@@ -84,14 +84,14 @@
                             <div class="form_field">
                                 <label for="field_7">Vérification du mail:</label>
                                 <input type="text" name="field_7" id="field_7" />
-                                <p class="meta">Possibilité de demander un nouveau code. <a href="#">Click here</a></p>
-                                    <p class="alert alert_warning">Code was incorrect. </p>
+                                <p class="meta">Possibilité de demander un nouveau code. <a href="#">Cliquer ici</a></p>
+                                    <p class="alert alert_warning">Code incorrect. </p>
                             </div>
 
 
 
                             <div class="form_field">
-                                <button type="submit" class="move_next_step" data-step="3">Continue</button>
+                                <button type="submit" class="move_next_step" data-step="3">Continuer</button>
                             </div>
                         </div><!--  END OF step_2 -->
 
@@ -102,43 +102,43 @@
                             <p>Votre adresse email a bien été confirmée. Il ne vous reste plus qu'à terminer de remplir le formulaire ci-dessous.</p>
 
                             <div class="form_field">
-                                <label for="field_8">téléphone:</label>
+                                <label for="field_8">Téléphone:</label>
                                 <input type="text" name="field_8" id="field_8" />
                             </div>
 
                             <div class="form_field">
-                                <label for="field_9">date de naiss. (jj/mm/aaaa) :</label>
+                                <label for="field_9">Date de naissance (jj/mm/aaaa) :</label>
                                 <input type="date" name="field_9" id="field_9" />
                             </div>
 
 
                             <h3>Pour les mineurs</h3>
-                            <p> responsable de la personne inscrite</p>
+                            <p>Responsable de la personne inscrite</p>
 
                             <div class="form_field">
-                                <label for="field_10">nom du responsable : </label>
+                                <label for="field_10">Nom du responsable : </label>
                                 <input type="text" name="field_10" id="field_10" />
                             </div>
                             <div class="form_field">
-                                <label for="field_11">prénom du responsable : </label>
+                                <label for="field_11">Prénom du responsable : </label>
                                 <input type="text" name="field_11" id="field_11" />
                             </div>
                             <div class="form_field">
-                                <label for="field_12">téléphone du responsable : </label>
+                                <label for="field_12">Téléphone du responsable : </label>
                                 <input type="text" name="field_12" id="field_12" />
                             </div>
                             <div class="form_field">
-                                <label for="field_13">adresse : </label>
+                                <label for="field_13">Adresse : </label>
                                 <input type="text" name="field_13" id="field_13" />
                             </div>
 
-                            <h3>Addresse</h3>
+                            <h3>Adresse</h3>
                             <div class="form_field">
-                                <label for="field_14">adresse 2 </label>
+                                <label for="field_14">Adresse 2 </label>
                                 <input type="text" name="field_14" id="field_14" />
                             </div>
                             <div class="form_field">
-                                <label for="field_15">num. postal : </label>
+                                <label for="field_15">Num. postal : </label>
                                 <input type="text" name="field_15" id="field_15" />
                             </div>
                             <div class="form_field field_error">
@@ -146,7 +146,7 @@
                                 <input type="text" name="field_16" id="field_16" />
                             </div>
                             <div class="form_field field_error">
-                                <label for="field_17">pays </label>
+                                <label for="field_17">Pays </label>
                                 <select   name="field_17" id="field_17" >
                                     <option value="Suisse">Suisse</option>
                                     <option value="France">France</option>
@@ -155,23 +155,23 @@
 
 
                             <div class="form_field" >
-                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>action mairie</span></label>
-                                <p class="meta"><a href="#">info dans CG</a> justificatif à envoyer au bureau</p>
+                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>Action mairie</span></label>
+                                <p class="meta"><a href="#">Info dans CG</a> Justificatif à envoyer au bureau</p>
                             </div>
                             <div class="form_field">
-                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>réduction</span></label>
-                                <p class="meta"><a href="#">info dans CG</a> justificatif à envoyer au bureau</p>
+                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>Réduction</span></label>
+                                <p class="meta"><a href="#">Info dans CG</a> Justificatif à envoyer au bureau</p>
                             </div>
                             <div class="form_field">
 
-                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>conditions générales</span></label>
-                                <p class="meta">en cochant cette case, vous acceptez.    <a href="#"> les conditions générales obligatoire</a> </p>
+                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>Conditions générales</span></label>
+                                <p class="meta">En cochant cette case, vous acceptez <a href="#"> les conditions générales obligatoires</a> </p>
 
                             </div>
 
 
                             <div class="form_field">
-                                <button type="submit" class="move_next_step" data-step="4">Continue</button>
+                                <button type="submit" class="move_next_step" data-step="4">Continuer</button>
                             </div>
                         </div><!--  END OF step_3 -->
 
@@ -198,7 +198,7 @@
 
 
                             <div class="form_field">
-                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>    J’ai vérifié mes données personnelles et confirme leur exactitude</span></label>
+                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>J’ai vérifié mes données personnelles et confirme leur exactitude</span></label>
                             </div>
 
                             <div class="form_field">
@@ -208,7 +208,7 @@
 
 
                             <div class="form_field">
-                                <button type="submit">  Confirmer mon inscription</button>
+                                <button type="submit">Confirmer mon inscription</button>
                             </div>
 
                         </div><!--  END OF step_4 -->
