@@ -87,6 +87,7 @@ a {
         color: $font_color;
         font-weight: bold;
         font-size: $font_size;
+        border-radius: 2px;
         &:hover {
             transform: scale(1.1);
 
@@ -115,7 +116,7 @@ form {
 input, textarea, select, button {
     padding: 10px;
     border: 0;
-    border-radius:  0;
+    border-radius: 2px;
     font-family: $font_stack;
     font-size: $font_size;
     margin: 0 0 10px;
