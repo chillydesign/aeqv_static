@@ -79,7 +79,7 @@
         if (typeof map_location != 'undefined') {
 
             var map_options = {
-                zoom: 18,
+                zoom: 15,
                 mapTypeControl: true,
                 scrollwheel: false,
                 draggable: true,

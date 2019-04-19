@@ -547,13 +547,12 @@ section#inscription_form {
 
 }
 
-section#inscriptionmembre {
-  form {
+
+section#inscriptionmembre, section#contactform  form {
     background: $light_grey;
     padding: 30px  30px 5px;
     margin: 0 0 20px;
   }
-}
 
 
 .gallery {margin-bottom: 50px;}
@@ -571,4 +570,9 @@ a.lb-prev, a.lb-next {
   &:focus, &:hover {
     box-shadow: 0 0 0;
   }
+}
+
+
+#map_container {
+  height: 300px;
 }

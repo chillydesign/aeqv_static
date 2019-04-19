@@ -28,15 +28,15 @@
 
                     <h3>Suivez-nous</h3>
                     <p>
-                        <a class="social_icon facebook_icon" href="facebook">Facebook</a>
-                        <a class="social_icon twitter_icon" href="twitter">twitter</a>
+                        <a class="social_icon facebook_icon" href="https://www.facebook.com/ecoleetquartierversoix/?__tn__=%2Cd%2CP-R&eid=ARA-QXifN0a2eS5ZzZ3vCs1R0DJeq7TT1qIdgNUbREJvKzn0OMbqvaKQBHkwBXrH4hdBY4M_K0wK28Vi">Facebook</a>
+                        <a class="social_icon twitter_icon" href="https://twitter.com/VilledeVersoix">twitter</a>
                     </p>
                 </div>
                 <div class="col-sm-4">
                     <h3>Liens utiles</h3>
                     <ul>
-                        <li><a href="index.php">Galerie</a></li>
-                        <li><a href="search.php">Pratique</a></li>
+                        <li><a href="galerie.php">Galerie</a></li>
+                        <li><a href="infospratiques.php">Infos pratiques</a></li>
                     </ul>
 
                     <h3>Nos partenaires</h3>
