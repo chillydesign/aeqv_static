@@ -16,7 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="search.php">Cours</a></li>
-                    <li><a href="index.php">Actualités</a></li>
+                    <li><a href="index.php">Infos pratiques</a></li>
                     <li>
                         <a href="apropos.php">A propos</a>
                         <ul>

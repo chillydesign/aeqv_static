@@ -588,3 +588,20 @@ a.lb-prev, a.lb-next {
 #map_container {
   height: 300px;
 }
+
+
+
+span.icon {
+    background:  no-repeat center center;
+    width: 20px;
+    background-size: contain;
+    height: 1rem;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+    &.reset_icon {
+     background-image: url('../images/search.svg');
+
+    }
+}

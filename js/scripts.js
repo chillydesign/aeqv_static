@@ -49,6 +49,18 @@
         // SLIDER
 
 
+        // SEARCH PAGE
+        // SEARCH PAGE
+        var $search_form = $*('#search_form');
+        $('#reset_filters').on('click', function(e){
+            e.preventDefault();
+            $('input', $search_form).val('').prop('checked' ,  false);
+
+        });
+        // SEARCH PAGE
+        // SEARCH PAGE
+
+
 
 
         // INSCRIPTION FORM

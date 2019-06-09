@@ -9,7 +9,7 @@
 
                 <aside class="col-sm-3 sticky_on_desktop">
 
-                    <form action="search.php" >
+                    <form action="search.php" id="search_form">
                         <div class="search_section">
                             <input type="text" name="keyword" id="keyword" placeholder="trouver un cours" />
 
@@ -54,6 +54,13 @@
                         </div>
                         <div class="search_section">
                             <button type="submit" name="search_course">Rechercher</button>
+                        </div>
+
+                        <div class="search_section">
+                            <a href="#" id="reset_filters" class="button button_grey">
+                             <span class="icon reset_icon"></span>
+                             Réinitialiser la recherche
+                             </a>
                         </div>
 
 
