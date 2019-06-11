@@ -14,13 +14,13 @@
 @media (min-width: $browser_width) { }
 
 body {
-    font: normal 62.5%  $font_stack;
-    background: white;
-    position: relative;
-    color: $font_color;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font: normal 62.5%  $font_stack;
+  background: white;
+  position: relative;
+  color: $font_color;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
 }
 
@@ -30,145 +30,183 @@ body {
 // allow elements to stick in their container as the user scrolls
 // dont show on mobile though
 body .sticky_on_desktop {
-    @media (min-width: $mobile_width) {
-        position: sticky;
-        top: 0px;
-        z-index: 25;
-    }
+  @media (min-width: $mobile_width) {
+    position: sticky;
+    top: 0px;
+    z-index: 25;
+  }
 }
 
 
 section {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
+.section_title {
+  background: $light_grey;
+  padding: 80px 0 40px;
+  border-bottom: solid 5px $yellow;
+  margin-bottom: 30px;
+}
+
+section#home_blocs {
+  padding: 50px 0 370px;
+  .home_bloc {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    vertical-align: bottom;
+
+    .dark_overlay {
+      background: rgba(78,74,71,0.55);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 19;
+    }
+    h3{
+      position: absolute;
+      bottom: 0;
+      color: white;
+      padding: 5px 10px;
+      z-index: 20;
+    }
+  }
+}
+
+
+
 .box {
-    padding: 20px;
-    margin: 0 0 20px;
-    background: $light_grey;
-    display: block;
-    color: $font_color;
+  padding: 20px;
+  margin: 0 0 20px;
+  background: $light_grey;
+  display: block;
+  color: $font_color;
 
 
 
 
-    &.box_workshop {
-        border: 5px solid white;
-        padding: 0;
-        .box_content {
-            background: white;
-        }
-    } // end of box workshop
-
-    &.box_course {
-        border: 5px solid white;
-        padding: 0;
-
-        color: white;
-        &:link, &:visited, &:active, &:hover {
-            color: white;
-        }
-
-
-    } // end of box_course
-
+  &.box_workshop {
+    border: 5px solid white;
+    padding: 0;
     .box_content {
-        display: block;
-        padding: 20px 10px;
-        min-height: 200px;
+      background: white;
+    }
+  } // end of box workshop
+
+  &.box_course {
+    border: 5px solid white;
+    padding: 0;
+
+    color: white;
+    &:link, &:visited, &:active, &:hover {
+      color: white;
     }
 
-    .box_title {
-        display: block;
-        font-size: #{$font_size * 1.3};
-        font-weight: bold;
+
+  } // end of box_course
+
+  .box_content {
+    display: block;
+    padding: 20px 10px;
+    min-height: 200px;
+  }
+
+  .box_title {
+    display: block;
+    font-size: #{$font_size * 1.3};
+    font-weight: bold;
+  }
+  .box_description {
+    display: block;
+    font-size: $font_size * 0.8;
+  }
+  .box_age {
+    display: block;
+    font-size: $font_size ;
+    padding: 10px 10px 5px;
+    font-weight: bold;
+    color: white;
+  }
+
+
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 ;
+  }
+
+  a.button  {
+    margin-top: 10px;
+  }
+
+
+  &.green_box {
+    background-color: $green;
+    border-color: $green;
+    color: white;
+
+
+  }
+  &.yellow_box {
+    background-color: $yellow;
+    border-color: $yellow;
+    color: $font_color;
+  }
+  &.pink_box {
+    background-color: $pink;
+    border-color: $pink;
+    color: $font_color;
+  }
+  &.brown_box {
+    background-color: $brown;
+    border-color: $brown;
+    color: white;
+  }
+  &.blue_box {
+    background-color: $blue;
+    border-color: $blue;
+    color: white;
+  }
+
+  &.box_cat_1 {
+    border-color: $blue;
+    background-color: $blue;
+  }
+  &.box_cat_2 {
+    border-color: $green;
+    background-color: $green;
+  }
+  &.box_cat_3 {
+    border-color: $yellow;
+    background-color: $yellow;
+    // is yellow, so needs black text not white text
+    color: $font_color;
+    &:link, &:visited, &:active, &:hover {
+      color: $font_color;
     }
-    .box_description {
-        display: block;
-        font-size: $font_size * 0.8;
-    }
+
     .box_age {
-        display: block;
-        font-size: $font_size ;
-        padding: 10px 10px 5px;
-        font-weight: bold;
-        color: white;
+      color: $font_color;
     }
-
-
-
-    img {
-        width: 100%;
-        height: auto;
-        margin: 0 ;
-    }
-
-    a.button  {
-        margin-top: 10px;
-    }
-
-
-    &.green_box {
-        background-color: $green;
-        border-color: $green;
-        color: white;
-
-
-    }
-    &.yellow_box {
-        background-color: $yellow;
-        border-color: $yellow;
-        color: $font_color;
-    }
-    &.pink_box {
-        background-color: $pink;
-        border-color: $pink;
-        color: $font_color;
-    }
-    &.brown_box {
-        background-color: $brown;
-        border-color: $brown;
-        color: white;
-    }
-    &.blue_box {
-        background-color: $blue;
-        border-color: $blue;
-        color: white;
-    }
-
-    &.box_cat_1 {
-        border-color: $blue;
-        background-color: $blue;
-    }
-    &.box_cat_2 {
-        border-color: $green;
-        background-color: $green;
-    }
-    &.box_cat_3 {
-        border-color: $yellow;
-        background-color: $yellow;
-        // is yellow, so needs black text not white text
-        color: $font_color;
-        &:link, &:visited, &:active, &:hover {
-            color: $font_color;
-        }
-
-        .box_age {
-            color: $font_color;
-        }
-    }
-    &.box_cat_4 {
-        border-color: $pink;
-        background-color: $pink;
-    }
-    &.box_cat_5 {
-        border-color: $brown;
-        background-color: $brown;
-    }
-    &.box_cat_6 {
-        border-color: $red;
-        background-color: $red;
-    }
+  }
+  &.box_cat_4 {
+    border-color: $pink;
+    background-color: $pink;
+  }
+  &.box_cat_5 {
+    border-color: $brown;
+    background-color: $brown;
+  }
+  &.box_cat_6 {
+    border-color: $red;
+    background-color: $red;
+  }
 
 
 } // END OF BOX
@@ -176,63 +214,63 @@ section {
 
 
 a.box {
-    color: $font_color;
+  color: $font_color;
 
-    &:link, &:visited, &:active, &:hover {
-        color: $font_color;
-    }
-    &:hover {
-        transform: scale(1.02);
-    }
+  &:link, &:visited, &:active, &:hover {
+    color: $font_color;
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
 
 }
 
 
 
 section#student_slider_section {
-    position: relative;
-    display: flex;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
 
-    .dark_bg {
-        background: transparentize($font_color, 0.45);
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 19;
+  .dark_bg {
+    background: transparentize($font_color, 0.45);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 19;
+  }
+  .welcome_text {
+    flex: 1 auto;
+    align-self: center;
+    z-index: 20;
+    color: white;
+    padding: 40px;
+    max-width: 600px;
+    text-align: center;
+
+    p {
+      font-size: 2em;
     }
-    .welcome_text {
-        flex: 1 auto;
-        align-self: center;
-        z-index: 20;
-        color: white;
-        padding: 40px;
-        max-width: 600px;
-        text-align: center;
 
-        p {
-            font-size: 2em;
-        }
-
+  }
+  #student_slider {
+    position: absolute;
+    height: 100%;
+    top:0;
+    left: 0;
+    width: 100%;
+    .slide {
+      height: 500px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
-    #student_slider {
-        position: absolute;
-        height: 100%;
-        top:0;
-        left: 0;
-        width: 100%;
-        .slide {
-            height: 500px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
 
-    } // END #student_slider
+  } // END #student_slider
 } // student_slider_section
 
 
@@ -240,68 +278,68 @@ section#student_slider_section {
 
 
 .letter_background {
-    background: url('../images/letters.svg') repeat ;
-    background-size: 700px;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  background: url('../images/letters.svg') repeat ;
+  background-size: 700px;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
 }
 
 
 section#home_page_search {
-    background: $pink;
-    padding: 30px;
-    border-top: 4px solid darken($pink, 5);
-    form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        position: relative;
-        z-index: 3;
+  background: $pink;
+  padding: 30px;
+  border-top: 4px solid darken($pink, 5);
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
 
-        input, select, button {
-            flex: 1 auto;
-            width: 48%;
-            max-width: 48%;
-            display: inline-block;
-            margin: 0 0 20px;
-            transition: all 0.3s;
-            box-shadow:  0 0 0  darken($pink,10);;
+    input, select, button {
+      flex: 1 auto;
+      width: 48%;
+      max-width: 48%;
+      display: inline-block;
+      margin: 0 0 20px;
+      transition: all 0.3s;
+      box-shadow:  0 0 0  darken($pink,10);;
 
 
-            @media (min-width: $mobile_width) {
-                width: 23%;
-                max-width: 23%;
-                margin: 0;
-            }
+      @media (min-width: $mobile_width) {
+        width: 23%;
+        max-width: 23%;
+        margin: 0;
+      }
 
-            &:hover {
-                box-shadow:  0 5px 0 0  lighten($pink,10);
-            }
-        }
+      &:hover {
+        box-shadow:  0 5px 0 0  lighten($pink,10);
+      }
+    }
 
-        select {
-        }
+    select {
+    }
 
-        input[type="submit"], button {
-            text-indent: -10px;
-            position: relative;
-            &:after {
-                content:'';
-                background: url('../images/search.svg') no-repeat center center;
-                width: 15px;
-                background-size: contain;
-                height: 100%;
-                display: inline-block;
-                position: absolute;
-                top: -3px;
-                margin-left: 10px;
+    input[type="submit"], button {
+      text-indent: -10px;
+      position: relative;
+      &:after {
+        content:'';
+        background: url('../images/search.svg') no-repeat center center;
+        width: 15px;
+        background-size: contain;
+        height: 100%;
+        display: inline-block;
+        position: absolute;
+        top: -3px;
+        margin-left: 10px;
 
-            }
-        } // end of input:submit, or button
-    } // end of form
+      }
+    } // end of input:submit, or button
+  } // end of form
 } // #home_page_search
 
 
@@ -309,25 +347,25 @@ section#home_page_search {
 
 
 section.latest_section {
-    a.button {
-        margin-bottom: 50px;
-        @media (min-width: $mobile_width) {
-            margin-bottom: 0px;
-        }
+  a.button {
+    margin-bottom: 50px;
+    @media (min-width: $mobile_width) {
+      margin-bottom: 0px;
     }
-    ul {
-        list-style: none;
-        margin: 0 0 20px;
-        padding: 0;
-     li {
-         display: inline-block;
-         padding: 10px;
-         margin: 0 5px 10px;
-         background: $light_grey;
-         border-radius: 2px;
-         font-size: #{$font-size * 0.85};
-     }
+  }
+  ul {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 10px;
+      margin: 0 5px 10px;
+      background: $light_grey;
+      border-radius: 2px;
+      font-size: #{$font-size * 0.85};
     }
+  }
 }
 
 
@@ -338,102 +376,102 @@ section#become_member { } // #become_member
 
 
 .big_title {
-    font-size: 4.5em;
-    position: relative;
-    display: block;
-    margin: 0 0 30px;
+  font-size: 4.5em;
+  position: relative;
+  display: block;
+  margin: 0 0 30px;
 
 
-    // LINES UNDER TITLE
-    // &:after {
-    //     content: '';
-    //     width: 300px;
-    //     border-bottom: 3px dotted transparentize(black, 0.5);
-    //     position: absolute;
-    //     bottom: 4px;
-    //     left: 0;
-    // }
+  // LINES UNDER TITLE
+  // &:after {
+  //     content: '';
+  //     width: 300px;
+  //     border-bottom: 3px dotted transparentize(black, 0.5);
+  //     position: absolute;
+  //     bottom: 4px;
+  //     left: 0;
+  // }
 
 }
 
 .col-sm-right {
-    .big_title {
-        // LINES UNDER TITLE
-        // &:after {
-        //     left: auto;
-        //     right: 0;
-        // }
-    }
+  .big_title {
+    // LINES UNDER TITLE
+    // &:after {
+    //     left: auto;
+    //     right: 0;
+    // }
+  }
 }
 
 
 
 
 #search_results {
-    position: relative;
-    aside {
-        margin-bottom: 15px;
+  position: relative;
+  aside {
+    margin-bottom: 15px;
 
-        @media (min-width: $mobile_width) {
-            margin-bottom: 0;
-            top: 15px; // for position sticky
-        }
+    @media (min-width: $mobile_width) {
+      margin-bottom: 0;
+      top: 15px; // for position sticky
     }
-    form {
+  }
+  form {
 
 
-        background: $light_grey;
-        padding: 20px 20px 10px;
+    background: $light_grey;
+    padding: 20px 20px 10px;
 
-        .search_section {
-            margin: 0 0 20px;
-        }
+    .search_section {
+      margin: 0 0 20px;
+    }
 
-        input, select, button {
-            margin-bottom: 0;
-        }
+    input, select, button {
+      margin-bottom: 0;
+    }
 
-        label.radio_label {
-            font-size: #{$font-size * 0.666};
-
-        }
+    label.radio_label {
+      font-size: #{$font-size * 0.666};
 
     }
 
+  }
 
-    .box {
+
+  .box {
 
 
-        img {
-            opacity: 0.75;
-            transition: all 0.3s;
-        }
-        &:hover {
-            img {
-                opacity: 1;
-            }
-        }
+    img {
+      opacity: 0.75;
+      transition: all 0.3s;
     }
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .member_box, .teacher_box {
-    background: $green;
-    padding: 30px;
-    color: white;
-    border: solid 1px white;
-    outline: solid 20px $green;
-    margin: 20px 20px 50px 20px;
+  background: $green;
+  padding: 30px;
+  color: white;
+  border: solid 1px white;
+  outline: solid 20px $green;
+  margin: 20px 20px 50px 20px;
 
-    .big_title {
-        &:after{
-            border-color: white;
-        }
+  .big_title {
+    &:after{
+      border-color: white;
     }
+  }
 }
 
 .teacher_box {
-    background: $brown;
-    outline: solid 20px $brown;
+  background: $brown;
+  outline: solid 20px $brown;
 }
 
 
@@ -443,48 +481,48 @@ section#become_member { } // #become_member
 // SINGLE COURSE
 
 .course_title {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 0 40px;
-    h1 {
-        flex: 1 auto;
-        padding: 0;
-        margin: 0;
-    }
-    img {
-        width: 100px;
-        min-width: 100px;
-        height: auto;
-        margin-left: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 40px;
+  h1 {
+    flex: 1 auto;
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    width: 100px;
+    min-width: 100px;
+    height: auto;
+    margin-left: 40px;
 
-    }
+  }
 }
 .course_infos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  li {
+    width: 45%;
+    max-width: 45%;
+    padding: 0  0 20px;
     margin: 0;
-    padding: 0;
-    li {
-        width: 45%;
-        max-width: 45%;
-        padding: 0  0 20px;
-        margin: 0;
-        display: block;
-        strong {
-            display: block;
-            text-transform: uppercase;
+    display: block;
+    strong {
+      display: block;
+      text-transform: uppercase;
 
-        }
-        span {
-            display: block;
-            color: $dark_grey;
-            font-size: 90%;
-        }
     }
+    span {
+      display: block;
+      color: $dark_grey;
+      font-size: 90%;
+    }
+  }
 }
 // SINGLE COURSE
 
@@ -493,78 +531,78 @@ section#become_member { } // #become_member
 
 
 ul.breadcrumbs {
-    margin: 0 0 30px;
-    padding: 0;
-    li {
-        background: lighten($light_grey, 5);
-        text-transform: uppercase;
-        font-size: 1.3em;
-        display: inline-block;
-        padding: 5px 10px;
-        margin: 0;
-        color: $dark_grey;
-        &.current {
-            color: $font_color;
-            font-weight: bold;
-            background: $light_grey;
+  margin: 0 0 30px;
+  padding: 0;
+  li {
+    background: lighten($light_grey, 5);
+    text-transform: uppercase;
+    font-size: 1.3em;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0;
+    color: $dark_grey;
+    &.current {
+      color: $font_color;
+      font-weight: bold;
+      background: $light_grey;
 
-        }
     }
+  }
 }
 
 p.meta {
-    color: $dark_grey;
-    font-style: italic;
-    font-size: 1.3em;
-    padding: 0 0 5px;
-    margin: 0;
+  color: $dark_grey;
+  font-style: italic;
+  font-size: 1.3em;
+  padding: 0 0 5px;
+  margin: 0;
 
 }
 
 .alert {
-    padding: 10px;
-    background: $blue;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    margin: 0 0 30px;
-    font-size: $font_size;
-    text-shadow: 0 2px 2px scale-color($blue, $lightness: -20%);
+  padding: 10px;
+  background: $blue;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 0 30px;
+  font-size: $font_size;
+  text-shadow: 0 2px 2px scale-color($blue, $lightness: -20%);
 
-    &.alert_success {
-        background-color: $green;
-        color: scale-color($green, $lightness: 90%);
-        text-shadow: 0 2px 2px scale-color($green, $lightness: -20%);
-    }
-    &.alert_warning {
-        background-color: $red;
-        color: scale-color($red, $lightness: 90%);
-        text-shadow: 0 2px 2px scale-color($red, $lightness: -20%);
-    }
+  &.alert_success {
+    background-color: $green;
+    color: scale-color($green, $lightness: 90%);
+    text-shadow: 0 2px 2px scale-color($green, $lightness: -20%);
+  }
+  &.alert_warning {
+    background-color: $red;
+    color: scale-color($red, $lightness: 90%);
+    text-shadow: 0 2px 2px scale-color($red, $lightness: -20%);
+  }
 }
 
 
 section#inscription_form {
-    form {
+  form {
 
-        .inscription_form_step {
-            background: $light_grey;
-            padding: 30px  30px 5px;
-            margin: 0 0 20px;
-            // border-bottom: 20px solid white;
-        }
-
+    .inscription_form_step {
+      background: $light_grey;
+      padding: 30px  30px 5px;
+      margin: 0 0 20px;
+      // border-bottom: 20px solid white;
     }
+
+  }
 
 
 }
 
 
 section#inscriptionmembre, section#contactform  form {
-    background: $light_grey;
-    padding: 30px  30px 5px;
-    margin: 0 0 20px;
-  }
+  background: $light_grey;
+  padding: 30px  30px 5px;
+  margin: 0 0 20px;
+}
 
 
 .gallery {margin-bottom: 50px;}
@@ -574,7 +612,7 @@ a.gallery_link {
     box-shadow: 0 0 0;
   }
   div {
-     padding:50%; background-size:cover;
+    padding:50%; background-size:cover;
   }
 }
 
@@ -592,16 +630,16 @@ a.lb-prev, a.lb-next {
 
 
 span.icon {
-    background:  no-repeat center center;
-    width: 20px;
-    background-size: contain;
-    height: 1rem;
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    margin-right: 10px;
-    &.reset_icon {
-     background-image: url('../images/search.svg');
+  background:  no-repeat center center;
+  width: 20px;
+  background-size: contain;
+  height: 1rem;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  &.reset_icon {
+    background-image: url('../images/search.svg');
 
-    }
+  }
 }

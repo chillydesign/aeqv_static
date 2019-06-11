@@ -61,7 +61,7 @@
                     <li>Anglais niveau 1P/2P	</li>
                     <li>Comptabilité Association</li>
                 </ul>
-                
+
                 <a href="#" class="button">En savoir plus</a>
             </div><!-- END OF COL -->
             <div class="col-sm-6">
@@ -91,6 +91,15 @@
 
         </div>
     </div><!-- end of container -->
+</section>
+
+<section id="home_blocs">
+  <div class="container">
+    <div class="col-sm-3"><a class="home_bloc_link" href="https://webfactor.ch/projets/aeqv_static/search.php?keyword=&category=&age=enfants&search_course="><div class="home_bloc" style="background-image: url('images/aeqv20.jpg');"><div class="dark_overlay"><h3>Cours enfants</h3></div></div></a></div>
+    <div class="col-sm-3"><a class="home_bloc_link" href="https://webfactor.ch/projets/aeqv_static/search.php?keyword=&category=&age=jeunes_Adultes&search_course="><div class="home_bloc" style="background-image: url('images/aeqv15.jpg');"><div class="dark_overlay"><h3>Cours ados</h3></div></div></a></div>
+    <div class="col-sm-3"><a class="home_bloc_link" href="https://webfactor.ch/projets/aeqv_static/search.php?keyword=&category=&age=adultes&search_course="><div class="home_bloc" style="background-image: url('images/aeqv7.jpg');"><div class="dark_overlay"><h3>Cours adultes</h3></div></div></a></div>
+    <div class="col-sm-3"><a class="home_bloc_link" href="https://webfactor.ch/projets/aeqv_static/search.php?keyword=&category=&age=seniors&search_course="><div class="home_bloc" style="background-image: url('images/aeqv1.jpg');"><div class="dark_overlay"><h3>Cours seniors</h3></div></div></a></div>
+  </div>
 </section>
 
 

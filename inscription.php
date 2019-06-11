@@ -163,9 +163,9 @@
                                 <p class="meta"><a href="#">Info dans CG</a> Justificatif à envoyer au bureau</p>
                             </div>
                             <div class="form_field">
-
+<!--
                                 <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>Conditions générales</span></label>
-                                <p class="meta">En cochant cette case, vous acceptez <a href="#"> les conditions générales obligatoires</a> </p>
+                                <p class="meta">En cochant cette case, vous acceptez <a href="#"> les conditions générales obligatoires</a> </p> -->
 
                             </div>
 
@@ -194,11 +194,9 @@
                             <p>Titre <br/>
                             Jour, heure</p>
 
-                            <p>Et m’engage à régler le montant du cours dans les 10 jours dès réception du bulletin de versement.</p>
-
 
                             <div class="form_field">
-                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>J’ai vérifié mes données personnelles et confirme leur exactitude</span></label>
+                                <label class="checkbox_label"><input type="checkbox" name="field_2" value="devenez_membre" /><span>J'ai vérifié mes données personnelles et m'engage à régler le montant du cours dans les 10 jours dès réception du bulletin de versement.</span></label>
                             </div>
 
                             <div class="form_field">

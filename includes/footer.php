@@ -7,25 +7,27 @@
             <div class="row">
                 <div class="col-sm-4">
 
-                    <h3>Contact</h3>
+                    <h3>Secrétariat</h3>
                     <p>Association Ecole & Quartier Versoix <br>
                         Collège des Colombières <br>
                         1290 Versoix - CH <br>
+                        salle 332, 3e étage<br>
+                        CCP 12-8388-3<br><br>
+                        Du lundi au vendredi de 8h15 à 12h <br>
                         tél. 022 388 24 44 <br>
                         <a href="mailto:info@aeqv.ch">info@aeqv.ch</a>
                     </p>
 
-                    <p>Secrétariat : <br>
-                        salle 332, 3e étage<br>
-                        CCP 12-8388-3<br>
-                    </p>
 
                 </div><!-- END OF COL -->
                 <div class="col-sm-4">
-                    <h3>Horaires</h3>
-                    <p>du lundi au vendredi de 8h15 à 12h </p>
-
-
+                  <h3>Téléchargements</h3>
+                  <ul>
+                    <li><a href="" target="_blank">Bulletin d'Inscription</a></li>
+                    <li><a href="" target="_blank">Calendrier 2019-2020</a></li>
+                    <li><a href="" target="_blank">Conditions Générales</a></li>
+                    <br>
+                  </ul>
                     <h3>Suivez-nous</h3>
                     <p>
                         <a class="social_icon facebook_icon" href="https://www.facebook.com/ecoleetquartierversoix/?__tn__=%2Cd%2CP-R&eid=ARA-QXifN0a2eS5ZzZ3vCs1R0DJeq7TT1qIdgNUbREJvKzn0OMbqvaKQBHkwBXrH4hdBY4M_K0wK28Vi">Facebook</a>
