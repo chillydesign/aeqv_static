@@ -58,9 +58,8 @@
 
                         <div class="search_section">
                             <a href="#" id="reset_filters" class="button button_grey">
-                             <span class="icon reset_icon"></span>
-                             Réinitialiser la recherche
-                             </a>
+                              <span class="icon reset_icon"></span> Réinitialiser
+                            </a>
                         </div>
 
 
